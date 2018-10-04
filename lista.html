@@ -1,0 +1,347 @@
+<div data-page="lista" class="page theme-orange" style="background-color: #edf7ed;">
+  
+	<div class="navbar animated fadeInDown" style="-webkit-animation-duration:1s;animation-duration:1s;">
+	  <div class="navbar-inner">
+		<div class="center" style="margin:0px;">
+		<!-- Barra de Búsqueda -->
+			<form data-search-list=".list-block-search" data-search-in=".card" class="searchbar searchbar-init">
+			<div class="searchbar-input">
+				<input type="search" placeholder="Buscar"><a href="#" class="searchbar-clear"></a>
+			</div><a href="#" class="searchbar-cancel">Cancelar</a>
+			</form>
+		</div>
+		<div class="right">
+			<a href="#" data-popover=".popover-links" class="open-popover"><i class="f7-icons color-white">bars</i></a>
+		</div>
+	  </div>
+	</div>
+	 
+	<div class="searchbar-overlay"></div>
+	  
+	<div class="page-content hide-bars-on-scroll">
+	  
+		<!-- SIN RESULTADOS -->
+		<div class="content-block searchbar-not-found">
+			  <div class="content-block-inner centro">¡Sin resultados!<br><br>Intenta con una búsqueda diferente.</div>
+			<p class="centro color-gray" style="font-size:10px;">© 2018 - alpha v1.0</p>
+		</div>
+	 
+		<!-- RESULTADOS, LISTA COMPLETA -->
+		<div class="list-block list-block-search searchbar-found card-list" style="margin: 10px">
+		  <ul id="lista-especies" class="row">
+			{{#each this}}
+			<li class="col-33 tablet-20 desktop-10" style="margin: 0 0 15px">
+			<a href="ficha.html" data-context-name="lista.{{@index}}">
+				<div class="animated zoomIn card lista-card-header-pic chips-lista" style="-webkit-animation-duration:.6s;animation-duration:.6s;">
+					<div style="display: none;">{{ncientifico}}{{nvulgar}}{{familia}}</div> <!-- CRITERIOS DE BUSQUEDA -->
+					<div style="background-image:url(images/especies/{{clave}}.jpg);padding: 4px;" valign="bottom" class="lazy card-header chips-lista color-white no-border">
+						<div class="animated zoomIn chip bg-{{conservauicn}}" style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .2s;animation-delay: .2s;"><div class="chip-label color-white">UICN</div></div>
+						<div class="animated zoomIn chip bg-{{conservaarg}}"  style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .3s;animation-delay: .3s;"><div class="chip-label color-white">ARG</div></div>
+						<div class="animated zoomIn chip bg-{{abundancia}}"   style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .4s;animation-delay: .4s;"><div class="chip-media"><i class="f7-icons color-white chippeque">graph_round</i></div></div>
+						<div class="animated zoomIn chip bg-{{dvisual}}"      style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .5s;animation-delay: .5s;"><div class="chip-media"><i class="f7-icons color-white chippeque">eye</i></div></div>
+						<div class="animated zoomIn chip bg-{{dauditiva}}"    style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .6s;animation-delay: .6s;"><div class="chip-media"><i class="f7-icons color-white chippeque">radio</i></div></div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="animated fadeInDown centro" style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .3s;animation-delay: .3s;">
+					{{ncientifico}}
+					</div>
+				</div>
+			</a>
+			</li>
+			{{/each}}
+		  </ul>
+		  <p class="centro color-gray" style="font-size:10px;">© 2018 - alpha v1.0</p>
+		</div>
+
+	</div>
+
+	<!-- POPOVER UICN -->
+	<!-- Preocupación Menor -->
+	<div class="popover popover-estado bg-blue color-white popover-uicnblue">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación UICN</h3>
+				<p class="centro">Preocupación Menor</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Casi Amenazada -->
+	<div class="popover popover-estado bg-green color-white popover-uicngreen">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación UICN</h3>
+				<p class="centro">Casi Amenazada</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Vulnerable -->
+	<div class="popover popover-estado bg-yellow color-black popover-uicnyellow">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación UICN</h3>
+				<p class="centro">Vulnerable</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- En Peligro -->
+	<div class="popover popover-estado bg-orange color-white popover-uicnorange">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación UICN</h3>
+				<p class="centro">En Peligro</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- En Peligro Crítico -->
+	<div class="popover popover-estado bg-red color-white popover-uicnred">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación UICN</h3>
+				<p class="centro">En Peligro Crítico</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Extinta en estado silvestre -->
+	<div class="popover popover-estado bg-black color-white popover-uicnblack">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación UICN</h3>
+				<p class="centro">Extinta en estado silvestre</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Extinto -->
+	<div class="popover popover-estado bg-black color-red popover-uicnblackred">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación UICN</h3>
+				<p class="centro">Extinto</p>
+			</div>
+		</div>
+	</div>
+	<!-- FIN POPOVER UICN -->
+
+	<!-- POPOVER ARGENTINA -->
+	<!-- No Evaluada -->
+	<div class="popover popover-estado bg-green color-white popover-arggray">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación en Argentina</h3>
+				<p class="centro">No Evaluada</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Insuficientemente Conocida -->
+	<div class="popover popover-estado bg-gray color-white popover-arggray">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación en Argentina</h3>
+				<p class="centro">Insuficientemente Conocida</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- No Amenazada -->
+	<div class="popover popover-estado bg-green color-white popover-arggreen">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación en Argentina</h3>
+				<p class="centro">No Amenazada</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Vulnerable -->
+	<div class="popover popover-estado bg-yellow color-black popover-argyellow">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación en Argentina</h3>
+				<p class="centro">Vulnerable</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Amenazada -->
+	<div class="popover popover-estado bg-orange color-white popover-argorange">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación en Argentina</h3>
+				<p class="centro">Amenazada</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- En Peligro -->
+	<div class="popover popover-estado bg-red color-white popover-argred">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Estado de Conservación en Argentina</h3>
+				<p class="centro">En Peligro</p>
+			</div>
+		</div>
+	</div>
+	<!-- FIN POPOVER ARGENTINA -->
+
+	<!-- POPOVER ABUNDANCIA -->
+	<!-- Abundancia I -->
+	<div class="popover popover-estado bg-green color-white popover-abundanciagreen">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Abundancia</h3>
+				<p class="centro">Abundante y registrada frecuentemente</p>
+				<p class="centro">en la última década</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Abundancia II -->
+	<div class="popover popover-estado bg-lime color-white popover-abundancialime">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Abundancia</h3>
+				<p class="centro">Común y registrada frecuentemente en la</p>
+				<p class="centro">última década (si fue buscada adecuadamente)</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Abundancia III -->
+	<div class="popover popover-estado bg-yellow color-black popover-abundanciayellow">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Abundancia</h3>
+				<p class="centro">Escasa, pero registrada en la última</p>
+				<p class="centro">década (si fue buscada adecuadamente)</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Abundancia IV -->
+	<div class="popover popover-estado bg-amber color-white popover-abundanciaamber">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Abundancia</h3>
+				<p class="centro">Muy escasa o no registrada en los últimos</p>
+				<p class="centro">10 años a pesar de ser buscada adecuadamente</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Abundancia V -->
+	<div class="popover popover-estado bg-orange color-white popover-abundanciaorange">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Abundancia</h3>
+				<p class="centro">Sin registro en los últimos 10 a 25 años</p>
+				<p class="centro">a pesar de ser buscada adecuadamente</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Abundancia VI -->
+	<div class="popover popover-estado bg-red color-white popover-abundanciared">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Abundancia</h3>
+				<p class="centro">Sin registro en los últimos 50 años</p>
+				<p class="centro">a pesar de ser buscada adecuadamente</p>
+		</div>
+	</div>
+	<!-- FIN POPOVER ABUNDANCIA -->
+
+	<!-- POPOVER DETECTABILIDAD VISUAL -->
+	<!-- Fácil -->
+	<div class="popover popover-estado bg-green color-white popover-dvisualgreen">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Detectabilidad Visual</h3>
+				<p class="centro">Fácil</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mediana -->
+	<div class="popover popover-estado bg-yellow color-black popover-dvisualyellow">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Detectabilidad Visual</h3>
+				<p class="centro">Mediana</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Difícil -->
+	<div class="popover popover-estado bg-red color-white popover-dvisualred">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Detectabilidad Visual</h3>
+				<p class="centro">Difícil</p>
+		</div>
+	</div>
+	<!-- FIN POPOVER DETECTABILIDAD VISUAL -->
+
+	<!-- POPOVER DETECTABILIDAD AUDITIVA -->
+	<!-- Fácil -->
+	<div class="popover popover-estado bg-green color-white popover-dauditivagreen">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Detectabilidad Auditiva</h3>
+				<p class="centro">Fácil</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Mediana -->
+	<div class="popover popover-estado bg-yellow color-black popover-dauditivayellow">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Detectabilidad Auditiva</h3>
+				<p class="centro">Mediana</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Difícil -->
+	<div class="popover popover-estado bg-red color-white popover-dauditivared">
+		<div class="popover-angle"></div>
+		<div class="popover-inner">
+			<div class="content-block">
+				<h3 class="centro">Detectabilidad Auditiva</h3>
+				<p class="centro">Difícil</p>
+		</div>
+	</div>
+	<!-- FIN POPOVER DETECTABILIDAD AUDITIVA -->
+
+</div>

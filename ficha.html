@@ -1,0 +1,180 @@
+<div data-page="ficha" class="page theme-deeporange" style="background-color: #edf7ed;">
+
+	<!-- BARRA NAVEGACION -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left animation4 fadeIn"><a href="#" class="back link"><i class="icon icon-close"></i></a></div>
+			<div class="center animation4 slideInDown" style="text-align:center;"><i>{{ncientifico}}</i></div>
+			<div class="right animation4 slideInRight">
+				<a href="javascript:playPause();" id="linkCanto">
+					<i class="f7-icons color-white">play_round_fill</i>
+				</a>
+			</div>
+			<audio id="audioCanto" loop><source src="audio/{{clave}}.mp3" type="audio/mpeg"></audio>
+		</div>
+	</div>
+	<!-- FIN BARRA NAVEGACION -->
+
+	<div class="page-content hide-bars-on-scroll">
+		<div class="content-block" style="margin: 20px 0 20px 0;">
+			
+			<!-- COLUMNAS -->
+			<div class="row">
+				<!-- COLUMNA IZQ (TABLET) -->
+				<div class="col-100 tablet-50">
+
+					<!-- TARJETA -->
+					<div class="card demo-card-header-pic" style="border-radius: 5px;">
+
+						<div class="swiper-container swiper-init demo-swiper card-header no-border" style="padding: 0;height: auto;">
+							<div class="swiper-wrapper">{{#each imagenes}}
+								<div class="swiper-slide">
+									<img src="images/especies/{{imagenesclave}}.jpg" style="width: 100%">
+									<div class="topleft color-gray copyright">© {{imagenescopyright}}</div>
+								</div>{{/each}}
+							</div>
+						</div>
+
+						<div class="centro color-green" style="font-size:180%;margin-top:10px;"><i>{{ncientifico}}</i></div>
+						<div class="card-content">
+							<div class="card-content-inner centro" style="padding: 0 16px 16px 16px;">
+
+								<div class="row">
+									<div class="col-auto">
+										<p class="textogrande"><b class="color-orange" style="font-weight:800;font-size: 80%;">Familia</b><br><i>{{familia}}</i></p>
+									</div>
+									<div class="col-auto">
+										<p class="textogrande"><b class="color-orange" style="font-weight:800;font-size: 80%;">Nombre vulgar</b><br>{{nvulgar}}</p>
+									</div>
+								</div>
+
+								<div class="row textopequeño">
+									<div class="col-auto">
+										<p><b class="color-red">Tamaño</b><br>{{tamano}}</p>
+									</div>
+									<div class="col-auto">
+										<p><b class="color-red">Hábitat</b><br>{{habitat}}</p>
+									</div>
+									<div class="col-auto">
+										<p><b class="color-red">Hábito</b><br>{{habito}}</p>
+									</div>
+								</div>
+								
+								<!-- ACTIVIDAD -->
+								<div class="card" style="border-radius: 5px;">
+									<div class="card-content">
+										<div class="card-content-inner" style="padding: 5px 0 0 0">
+											<b class="color-red textopequeño">Período de Actividad</b>
+											<p class="buttons-row meses disabled" style="margin-top: 5px">
+												<a href="#" class="button button-{{jul}}">Jul</a>
+												<a href="#" class="button button-{{ago}}">Ago</a>
+												<a href="#" class="button button-{{sep}}">Sep</a>
+												<a href="#" class="button button-{{oct}}">Oct</a>
+												<a href="#" class="button button-{{nov}}">Nov</a>
+												<a href="#" class="button button-{{dic}}">Dic</a>
+												<a href="#" class="button button-{{ene}}">Ene</a>
+												<a href="#" class="button button-{{feb}}">Feb</a>
+												<a href="#" class="button button-{{mar}}">Mar</a>
+												<a href="#" class="button button-{{abr}}">Abr</a>
+												<a href="#" class="button button-{{may}}">May</a>
+												<a href="#" class="button button-{{jun}}">Jun</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- FIN ACTIVIDAD -->
+								
+								<!-- BOTONES ESTADO -->
+								<p class="buttons-row estado">
+									<a href="#" data-popover=".popover-uicn{{conservauicn}}" class="button button-big button-fill color-{{conservauicn}} open-popover">UICN</a>
+									<a href="#" data-popover=".popover-arg{{conservaarg}}" class="button button-big button-fill color-{{conservaarg}} open-popover">ARG</a>
+									<a href="#" data-popover=".popover-abundancia{{abundancia}}" class="button button-big button-fill color-{{abundancia}} open-popover"><i class="f7-icons">graph_round</i></a>
+									<a href="#" data-popover=".popover-dvisual{{dvisual}}" class="button button-big button-fill color-{{dvisual}} open-popover"><i class="f7-icons">eye</i></a>
+									<a href="#" data-popover=".popover-dauditiva{{dauditiva}}" class="button button-big button-fill color-{{dauditiva}} open-popover"><i class="f7-icons">radio</i></a>
+								</p>
+								<!-- FIN BOTONES ESTADO -->
+
+							</div>
+						</div>
+					</div>
+					<!-- FIN TARJETA -->
+
+				</div>
+				<!-- FIN COLUMNA IZQ (TABLET) -->
+			
+				<!-- COLUMNA DER (TABLET) -->
+				<div class="col-100 tablet-50">
+
+					<h3 class="color-black">Características</h3>
+					<p class="justificado">{{caracteristicas}}</p>
+
+					<h3 class="color-black">Microhábitats</h3>
+					<p class="justificado">{{microhabitats}}</p>
+
+					<div class="card" style="border-radius: 5px;">
+						<div class="card-content">
+							<div class="card-content-inner">
+								<p><b class="color-red textopequeño">Rango Altitudinal</b><br>{{rangoaltitud}}</p>
+								<p><b class="color-red textopequeño">Ecoregión</b><br>{{ecoregion}}</p>
+								<p><b class="color-red textopequeño">Distribución General</b><br>{{distrigeneral}}</p>
+								<p><b class="color-red textopequeño">Distribución en Argentina</b><br>{{distriargentina}}</p>
+								<p><b class="color-red textopequeño">Distribución en Jujuy</b><br>{{distrijujuy}}</p>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="color-black">¿Cómo se reproduce?</h3>
+					<p class="justificado">{{modoreproductivo}}</p>
+
+					<div class="card" style="border-radius: 5px;">
+						<div class="card-content">
+							<div class="card-content-inner" style="padding: 1px 16px 16px 16px;">
+								<h3 class="color-black">Especies similares</h3>
+								
+								<div class="list-block media-list media-list-mini">
+									<ul id="lista-especies">{{#each similares}}
+										<li>
+										<a href="ficha.html" data-context-name="lista.{{similarid}}" class="item-link" data-reload="true" data-ignore-cache="true">
+											<div class="item-content">
+												<div class="item-media"><img src="images/especies/{{similarclave}}.jpg" width="40px"></div>
+												<div class="item-inner">
+													<div class="item-title-row"  style="background-image: url()">
+														<div class="item-title color-green"><i>{{similarncientifico}}</i></div>
+													</div>
+													<div class="item-subtitle color-black">{{similarnvulgar}}</div>
+												</div>
+											</div>
+										</a>
+										</li>{{/each}}
+									</ul>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+
+					<div class="list-block accordion-list">
+						<ul>
+							<li class="accordion-item">
+								<a href="#" class="item-content item-link">
+									<div class="item-inner">
+										<div class="item-title"><b>Bibliografía</b></div>
+									</div>
+								</a>
+								<div class="accordion-item-content">
+									<div class="content-block">
+									<p>{{bibliografia}}</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- FIN COLUMNA DER (TABLET) -->
+			</div>
+			<!-- FIN COLUMNAS -->
+		</div>
+	</div>
+
+</div>
