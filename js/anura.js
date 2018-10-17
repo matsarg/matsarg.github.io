@@ -699,11 +699,7 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'gastrotheca_christiani',
-						imagenescopyright: 'NombreyApellido',
-					},
-					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Vaira',
 					},
 				],
                 ncientifico: 'Gastrotheca christiani',
@@ -2215,11 +2211,11 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'dermatonotus_muelleri',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Vaira',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'dermatonotus_muelleri1',
+						imagenescopyright: 'M. Vaira',
 					},
 				],
                 ncientifico: 'Dermatonotus muelleri',
