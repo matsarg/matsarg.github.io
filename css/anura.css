@@ -1,3 +1,6 @@
+/* remove branding */
+img[src*="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"] { display: none;}
+
 body {
 	font-family:'Raleway',sans-serif;
 }
@@ -60,6 +63,11 @@ body {
 }
 .textopequeño {
 	font-size: 85%;
+}
+.nombrecientifico {
+	font-size: 8vw;
+	font-weight: 800;
+	text-align: center;
 }
 .centro {
 	text-align: center;
