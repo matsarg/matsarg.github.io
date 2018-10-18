@@ -228,6 +228,14 @@ body.with-panel-right-reveal .panel-overlay {
 	left: 16px;
 	font-size: 2vw;
 }
+.fichancientifico {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	right: 8px;
+	font-size: 2.5vw;
+	word-spacing: 100vw;
+}
 .list-block ul::after {
 	height: 0px;
 }
@@ -244,7 +252,7 @@ body.with-panel-right-reveal .panel-overlay {
 	width: 100%;
 }
 .lista-card-header-pic .card-header {
-    height: 40vw;
+    height: 30vw;
     background-size: cover;
     background-position: center;
 }
@@ -266,7 +274,7 @@ body.with-panel-right-reveal .panel-overlay {
 }
 @media (min-width: 768px){
 	.lista-card-header-pic .card-header {
-		height: 23vw;
+		height: 18vw;
 		background-size: cover;
 		background-position: center;
 	}
@@ -289,10 +297,18 @@ body.with-panel-right-reveal .panel-overlay {
 	.card-footer {
 		font-size: 1.5vw;
 	}
+	.fichancientifico {
+		position: absolute;
+		top: 8px;
+		left: 8px;
+		right: 8px;
+		font-size: 1.5vw;
+		word-spacing: 100vw;
+	}
 }
 @media (min-width: 1200px){
 	.lista-card-header-pic .card-header {
-		height: 20vw;
+		height: 16vw;
 		background-size: cover;
 		background-position: center;
 	}
@@ -318,6 +334,14 @@ body.with-panel-right-reveal .panel-overlay {
 	.card-footer {
 		font-size: 1.5vw;
 	}
+	.fichancientifico {
+		position: absolute;
+		top: 8px;
+		left: 8px;
+		right: 8px;
+		font-size: 1.2vw;
+		word-spacing: 100vw;
+	}
 }
 .chip {
 	border-radius: 25px;
@@ -328,4 +352,7 @@ body.with-panel-right-reveal .panel-overlay {
 .animationcards {
 	-webkit-animation-duration: .1s;
 	animation-duration: .1s;
+}
+.bg-splash {
+	background-image: linear-gradient( 180deg,  rgba(76,175,80,1) 50%, rgba(255,152,0,1) 100% );
 }
