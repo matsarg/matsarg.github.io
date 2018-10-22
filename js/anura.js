@@ -743,19 +743,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'boana_raniceps',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'boana_raniceps1',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'boana_raniceps2',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'boana_raniceps3',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Boana raniceps',
@@ -805,23 +805,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'boana_riojana',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'boana_riojana1',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'boana_riojana2',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'boana_riojana3',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'boana_riojana4',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Boana riojana',
@@ -871,19 +871,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'dendropsophus_minutus',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'dendropsophus_minutus1',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'dendropsophus_minutus2',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'dendropsophus_minutus3',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Dendropsophus minutus',
@@ -933,7 +933,7 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'dendropsophus_nanus',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'dendropsophus_nanus1',
@@ -941,11 +941,11 @@ var myApp = new Framework7({
 					},
 					{
 						imagenesclave: 'dendropsophus_nanus2',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'dendropsophus_nanus3',
-						imagenescopyright: 'M. Akmentis',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
 						imagenesclave: 'dendropsophus_nanus4',

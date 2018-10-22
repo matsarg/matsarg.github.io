@@ -356,3 +356,6 @@ body.with-panel-right-reveal .panel-overlay {
 .bg-splash {
 	background-image: linear-gradient( 180deg,  rgba(76,175,80,1) 50%, rgba(255,152,0,1) 100% );
 }
+.searchbar-overlay {
+	background: rgba(0,0,0,0.5);
+}
