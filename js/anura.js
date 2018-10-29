@@ -549,6 +549,14 @@ var myApp = new Framework7({
 						imagenesclave: 'ceratophrys_cranwelli',
 						imagenescopyright: 'M. Vaira',
 					},
+					{
+						imagenesclave: 'ceratophrys_cranwelli1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'ceratophrys_cranwelli2',
+						imagenescopyright: 'M. Akmentins',
+					},
 				],
                 ncientifico: 'Ceratophrys cranwelli',
                 nvulgar: 'Escuerzo chaqueño',
@@ -809,15 +817,15 @@ var myApp = new Framework7({
 					},
 					{
 						imagenesclave: 'boana_riojana1',
-						imagenescopyright: 'M. Akmentins',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
 						imagenesclave: 'boana_riojana2',
-						imagenescopyright: 'M. Akmentins',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
 						imagenesclave: 'boana_riojana3',
-						imagenescopyright: 'M. Akmentins',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
 						imagenesclave: 'boana_riojana4',
@@ -1155,11 +1163,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'leptodactylus_bufonius',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'leptodactylus_bufonius1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_bufonius2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_bufonius3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_bufonius4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Leptodactylus bufonius',
@@ -1239,11 +1259,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'leptodactylus_chaquensis',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'leptodactylus_chaquensis1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_chaquensis2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_chaquensis3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_chaquensis4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Leptodactylus chaquensis',
@@ -2259,11 +2291,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'elachistocleis_haroi',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'elachistocleis_haroi1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'elachistocleis_haroi2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'elachistocleis_haroi3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'elachistocleis_haroi4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Elachistocleis haroi',
@@ -2313,11 +2357,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'elachistocleis_skotogaster',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'elachistocleis_skotogaster1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'elachistocleis_skotogaster2',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'elachistocleis_skotogaster3',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'elachistocleis_skotogaster4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Elachistocleis skotogaster',
