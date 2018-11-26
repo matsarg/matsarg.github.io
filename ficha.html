@@ -3,19 +3,13 @@
 	<!-- BARRA NAVEGACION -->
 	<div class="navbar">
 		<div class="navbar-inner">
-			<div class="left animation4 fadeIn"><a href="#" class="back link"><i class="icon icon-close"></i></a></div>
-			<div class="center animation4 slideInDown" style="text-align:center;"><i>{{ncientifico}}</i></div>
-			<div class="right animation4 slideInRight">
-				<a href="javascript:playPause();" id="linkCanto">
-					<i class="f7-icons color-white">play_round_fill</i>
-				</a>
-			</div>
-			<audio id="audioCanto" loop><source src="audio/{{clave}}.mp3" type="audio/mpeg"></audio>
+			<div class="center animation4 slideInDown"><i>{{ncientifico}}</i></div>
+			<div class="right animation4 slideInRight"><a href="#" class="back link close-picker"><i class="icon icon-close"></i></a></div>
 		</div>
 	</div>
 	<!-- FIN BARRA NAVEGACION -->
 
-	<div class="page-content hide-bars-on-scroll">
+	<div class="page-content">
 		<div class="content-block" style="margin: 20px 0 20px 0;">
 			
 			<!-- COLUMNAS -->
@@ -26,7 +20,7 @@
 					<!-- TARJETA -->
 					<div class="card demo-card-header-pic" style="border-radius: 5px;">
 
-						<div class="swiper-container swiper-init demo-swiper card-header no-border" style="padding: 0;height: auto;">
+						<div class="swiper-container swiper-init demo-swiper card-header no-border" style="padding: 0;height: auto;border-radius: 5px;border-radius: 5px 5px 0 0;">
 							<div class="swiper-wrapper">{{#each imagenes}}
 								<div class="swiper-slide">
 									<img src="images/especies/{{imagenesclave}}.jpg" style="width: 100%">
@@ -41,22 +35,22 @@
 
 								<div class="row">
 									<div class="col-auto">
-										<p class="textogrande"><b class="color-orange" style="font-weight:800;font-size: 80%;">Familia</b><br><i>{{familia}}</i></p>
+										<a href="#" data-picker=".picker-familia" class="open-picker" style="color: inherit;"><p class="textogrande"><b class="color-orange" style="font-weight:800;font-size: 80%;">Familia</b><br><i>{{familia}}</i></p></a>
 									</div>
 									<div class="col-auto">
-										<p class="textogrande"><b class="color-orange" style="font-weight:800;font-size: 80%;">Nombre vulgar</b><br>{{nvulgar}}</p>
+										<a href="#" data-picker=".picker-nvulgar" class="open-picker" style="color: inherit;"><p class="textogrande"><b class="color-orange" style="font-weight:800;font-size: 80%;">Nombre vulgar</b><br>{{nvulgar}}</p></a>
 									</div>
 								</div>
 
 								<div class="row textopequeño">
 									<div class="col-auto">
-										<p><b class="color-red">Tamaño</b><br>{{tamano}}</p>
+										<a href="#" data-picker=".picker-tamano" class="open-picker" style="color: inherit;"><p><b class="color-red">Tamaño</b><br>{{tamano}}</p></a>
 									</div>
 									<div class="col-auto">
-										<p><b class="color-red">Hábitat</b><br>{{habitat}}</p>
+										<a href="#" data-picker=".picker-habitat" class="open-picker" style="color: inherit;"><p><b class="color-red">Hábitat</b><br>{{habitat}}</p></a>
 									</div>
 									<div class="col-auto">
-										<p><b class="color-red">Hábito</b><br>{{habito}}</p>
+										<a href="#" data-picker=".picker-habito" class="open-picker" style="color: inherit;"><p><b class="color-red">Hábito</b><br>{{habito}}</p></a>
 									</div>
 								</div>
 								
@@ -64,9 +58,11 @@
 								<div class="card" style="border-radius: 5px;">
 									<div class="card-content">
 										<div class="card-content-inner" style="padding: 5px 0 0 0">
-											<b class="color-red textopequeño">Período de Actividad</b>
+											<a href="#" data-picker=".picker-periodoactividad" class="open-picker" style="color: inherit;">
+												<b class="color-red textopequeño">Período de Actividad</b>
+											</a>
 											<p class="buttons-row meses disabled" style="margin-top: 5px">
-												<a href="#" class="button button-{{jul}}">Jul</a>
+												<a href="#" class="button button-{{jul}}" style="border-radius: 0 0 0 5px;">Jul</a>
 												<a href="#" class="button button-{{ago}}">Ago</a>
 												<a href="#" class="button button-{{sep}}">Sep</a>
 												<a href="#" class="button button-{{oct}}">Oct</a>
@@ -77,7 +73,7 @@
 												<a href="#" class="button button-{{mar}}">Mar</a>
 												<a href="#" class="button button-{{abr}}">Abr</a>
 												<a href="#" class="button button-{{may}}">May</a>
-												<a href="#" class="button button-{{jun}}">Jun</a>
+												<a href="#" class="button button-{{jun}}" style="border-radius: 0 0 5px 0;">Jun</a>
 											</p>
 										</div>
 									</div>
@@ -86,13 +82,20 @@
 								
 								<!-- BOTONES ESTADO -->
 								<p class="buttons-row estado">
-									<a href="#" data-popover=".popover-uicn{{conservauicn}}" class="button button-big button-fill color-{{conservauicn}} open-popover">UICN</a>
-									<a href="#" data-popover=".popover-arg{{conservaarg}}" class="button button-big button-fill color-{{conservaarg}} open-popover">ARG</a>
-									<a href="#" data-popover=".popover-abundancia{{abundancia}}" class="button button-big button-fill color-{{abundancia}} open-popover"><i class="f7-icons">graph_round</i></a>
-									<a href="#" data-popover=".popover-dvisual{{dvisual}}" class="button button-big button-fill color-{{dvisual}} open-popover"><i class="f7-icons">eye</i></a>
-									<a href="#" data-popover=".popover-dauditiva{{dauditiva}}" class="button button-big button-fill color-{{dauditiva}} open-popover"><i class="f7-icons">radio</i></a>
+									<a href="#" data-picker=".picker-uicn{{conservauicn}}"     class="button button-big button-fill button-raised color-{{conservauicn}} open-picker">UICN</a>
+									<a href="#" data-picker=".picker-arg{{conservaarg}}"       class="button button-big button-fill button-raised color-{{conservaarg}} open-picker">ARG</a>
+									<a href="#" data-picker=".picker-abundancia{{abundancia}}" class="button button-big button-fill button-raised color-{{abundancia}} open-picker"><i class="f7-icons">graph_round</i></a>
+									<a href="#" data-picker=".picker-dvisual{{dvisual}}"       class="button button-big button-fill button-raised color-{{dvisual}} open-picker"><i class="f7-icons">eye</i></a>
+									<a href="#" data-picker=".picker-dauditiva{{dauditiva}}"   class="button button-big button-fill button-raised color-{{dauditiva}} open-picker"><i class="f7-icons">radio</i></a>
 								</p>
 								<!-- FIN BOTONES ESTADO -->
+
+								<div style="{{audio}}">
+								<a href="javascript:playPause();" id="linkCanto" class="button button-big button-fill button-raised color-indigo" style="border-radius: 25px;">
+									<div>Reproducir canto</div>
+								</a>
+								<audio id="audioCanto" loop><source src="audio/{{clave}}.mp3" type="audio/mpeg"></audio>
+								</div>
 
 							</div>
 						</div>
@@ -118,7 +121,7 @@
 								<p><b class="color-red textopequeño">Ecoregión</b><br>{{ecoregion}}</p>
 								<p><b class="color-red textopequeño">Distribución General</b><br>{{distrigeneral}}</p>
 								<p><b class="color-red textopequeño">Distribución en Argentina</b><br>{{distriargentina}}</p>
-								<p><b class="color-red textopequeño">Distribución en Jujuy</b><br>{{distrijujuy}}</p>
+								<!--<p><b class="color-red textopequeño">Distribución en Jujuy</b><br>{{distrijujuy}}</p>-->
 							</div>
 						</div>
 					</div>
@@ -176,5 +179,615 @@
 			<!-- FIN COLUMNAS -->
 		</div>
 	</div>
+
+	<!-- Picker FAMILIA-->
+	<div class="picker-modal theme-orange picker-familia">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Familia</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Familia a la que pertenece cada especie, información obtenida de Frost (2018).
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker NOMBRE VULGAR-->
+	<div class="picker-modal theme-orange picker-nvulgar">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Nombre vulgar</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Nombre común con el que se conocen algunas especies, puede variar en diferentes regiones.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker TAMAÑO-->
+	<div class="picker-modal theme-red picker-tamano">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Tamaño</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Categorías referidas al tamaño promedio que presentan los adultos de cada especie. Debajo de cada categoría se incluye el rango de tamaño basado en bibliografía y datos personales de los autores.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker HABITAT-->
+	<div class="picker-modal theme-red picker-habitat">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Hábitat</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Se refiere a los lugares en donde pasan la mayor parte del tiempo los adultos de cada especie. Pueden encontrarse en la <b>tierra (terrestres)</b>, en la <b>vegetación (arborícolas)</b>, en el <b>agua (acuáticos)</b> y/o en <b>cuevas (cavícolas)</b>.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker HABITO-->
+	<div class="picker-modal theme-red picker-habito">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Hábito</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Se refiere al momento del día en el que se encuentran activos los adultos de cada especie. Pueden ser <b>diurnos</b>, <b>nocturnos</b> y/o <b>crepuscular</b> (intervalo ante de la puesta del sol).
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker PERIODO DE ACTIVIDAD-->
+	<div class="picker-modal theme-red picker-periodoactividad">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Período de Actividad</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Los casilleros coloreados corresponden a los meses del año en el que se pueden escuchar los cantos y observar a los adultos de cada especie.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- INICIO Picker UICN -->
+
+	<!-- Picker UICN Preocupación Menor-->
+	<div class="picker-modal theme-blue picker-uicnblue">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación UICN</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Preocupación Menor
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker UICN Casi Amenazada-->
+	<div class="picker-modal theme-green picker-uicngreen">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación UICN</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Casi Amenazada
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker UICN Vulnerable-->
+	<div class="picker-modal theme-yellow picker-uicnyellow">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left color-black">Estado de Conservación UICN</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Vulnerable
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker UICN En Peligro-->
+	<div class="picker-modal theme-orange picker-uicnorange">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación UICN</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					En Peligro
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker UICN En Peligro Crítico-->
+	<div class="picker-modal theme-red picker-uicnred">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación UICN</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					En Peligro Crítico
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker UICN Extinta en estado silvestre-->
+	<div class="picker-modal theme-black picker-uicnblack">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación UICN</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Extinta en estado silvestre
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker UICN Extinto-->
+	<div class="picker-modal theme-black picker-uicnblackred">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación UICN</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Extinto
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN Picker UICN -->
+
+	<!-- INICIO Picker ARGENTINA -->
+
+	<!-- Picker ARGENTINA No Evaluada-->
+	<div class="picker-modal theme-gray picker-arggray">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación en Argentina</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					No Evaluada
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Picker ARGENTINA Insuficientemente Conocida DESACTIVADO-->
+	<div class="picker-modal theme-gray picker-arg000">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación en Argentina</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Insuficientemente Conocida
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ARGENTINA No Amenazada-->
+	<div class="picker-modal theme-green picker-arggreen">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación en Argentina</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					No Amenazada
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ARGENTINA Vulnerable-->
+	<div class="picker-modal theme-yellow picker-argyellow">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left color-black">Estado de Conservación en Argentina</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Vulnerable
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ARGENTINA Amenazada-->
+	<div class="picker-modal theme-orange picker-argorange">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación en Argentina</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Amenazada
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ARGENTINA En Peligro -->
+	<div class="picker-modal theme-red picker-argred">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Estado de Conservación en Argentina</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					En Peligro
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN Picker ARGENTINA -->
+
+	<!-- INICIO Picker ABUNDANCIA -->
+
+	<!-- Picker ABUNDANCIA I -->
+	<div class="picker-modal theme-green picker-abundanciagreen">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Abundancia</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Abundante y registrada frecuentemente en la última década.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ABUNDANCIA II -->
+	<div class="picker-modal theme-lime picker-abundancialime">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Abundancia</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Común y registrada frecuentemente en la última década (si fue buscada adecuadamente).
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ABUNDANCIA III -->
+	<div class="picker-modal theme-yellow picker-abundanciayellow">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left color-black">Abundancia</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Escasa, pero registrada en la última década (si fue buscada adecuadamente).
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ABUNDANCIA IV -->
+	<div class="picker-modal theme-amber picker-abundanciaamber">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Abundancia</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Muy escasa o no registrada en los últimos 10 años a pesar de ser buscada adecuadamente.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ABUNDANCIA V -->
+	<div class="picker-modal theme-orange picker-abundanciaorange">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Abundancia</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Sin registro en los últimos 10 a 25 años a pesar de ser buscada adecuadamente.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker ABUNDANCIA VI -->
+	<div class="picker-modal theme-red picker-abundanciared">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Abundancia</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Sin registro en los últimos 50 años a pesar de ser buscada adecuadamente.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN Picker ABUNDANCIA -->
+
+	<!-- INICIO Picker DETECTABILIDAD VISUAL -->
+
+	<!-- Picker DETECTABILIDAD VISUAL Fácil -->
+	<div class="picker-modal theme-green picker-dvisualgreen">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Detectabilidad Visual</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Fácil
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker DETECTABILIDAD VISUAL Mediana -->
+	<div class="picker-modal theme-yellow picker-dvisualyellow">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left color-black">Detectabilidad Visual</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Mediana
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker DETECTABILIDAD VISUAL Difícil -->
+	<div class="picker-modal theme-red picker-dvisualred">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Detectabilidad Visual</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Difícil
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN Picker DETECTABILIDAD VISUAL -->
+
+	<!-- INICIO Picker DETECTABILIDAD AUDITIVA -->
+
+	<!-- Picker DETECTABILIDAD AUDITIVA Fácil -->
+	<div class="picker-modal theme-green picker-dauditivagreen">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Detectabilidad Auditiva</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Fácil
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker DETECTABILIDAD AUDITIVA Mediana -->
+	<div class="picker-modal theme-yellow picker-dauditivayellow">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left color-black">Detectabilidad Auditiva</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Mediana
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Picker DETECTABILIDAD AUDITIVA Difícil -->
+	<div class="picker-modal theme-red picker-dauditivared">
+		<a href="#" class="close-picker">
+		<div class="toolbar">
+			<div class="toolbar-inner" style="padding: 18px;">
+				<div class="left">Detectabilidad Auditiva</div>
+				<div class="right"><i class="icon icon-close"></i></div>
+			</div>
+		</div>
+		</a>
+		<div class="picker-modal-inner">
+			<div class="content-block" style="margin:0;">
+				<p class="justificado">
+					Difícil
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- FIN Picker DETECTABILIDAD AUDITIVA -->
+
 
 </div>
