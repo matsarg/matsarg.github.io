@@ -41,7 +41,7 @@ var myApp = new Framework7({
                 ncientifico: 'Melanophryniscus rubriventris',
                 nvulgar: 'Sapito de panza roja Yungueño',
 				familia: 'Bufonidae',
-                tamano: 'Pequeño (35 a 45 mm)',
+                tamano: 'Pequeño<br>(35 a 45 mm)',
 				habitat: 'Terrestre',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'blue',
@@ -89,7 +89,7 @@ var myApp = new Framework7({
                 ncientifico: 'Rhinella arenarum arenarum',
                 nvulgar: 'Sapo común',
 				familia: 'Bufonidae',
-                tamano: 'Mediano a grande (85 a 120 mm)',
+                tamano: 'Mediano a grande<br>(85 a 120 mm)',
 				habitat: 'Terrestre',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -138,9 +138,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '5',
-						similarncientifico: 'Rhinella schneideri',
+						similarncientifico: 'Rhinella diptycha',
 						similarnvulgar: 'Rococó',
-						similarclave: 'rhinella_schneideri',
+						similarclave: 'rhinella_diptycha',
 					},
 					{
 						similarid: '6',
@@ -154,6 +154,7 @@ var myApp = new Framework7({
 			{
 				id: 02,
 				clave: 'rhinella_gallardoi',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_gallardoi',
@@ -167,7 +168,7 @@ var myApp = new Framework7({
                 ncientifico: 'Rhinella gallardoi',
                 nvulgar: 'Sapo yungueño grande',
 				familia: 'Bufonidae',
-                tamano: 'Mediano (60 a 95 mm)',
+                tamano: 'Mediano<br>(60 a 95 mm)',
 				habitat: 'Terrestre y acuático',
 				habito: 'Nocturno',
 				conservauicn: 'orange',
@@ -216,9 +217,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '5',
-						similarncientifico: 'Rhinella schneideri',
+						similarncientifico: 'Rhinella diptycha',
 						similarnvulgar: 'Rococó',
-						similarclave: 'rhinella_schneideri',
+						similarclave: 'rhinella_diptycha',
 					},
 					{
 						similarid: '6',
@@ -245,7 +246,7 @@ var myApp = new Framework7({
                 ncientifico: 'Rhinella major',
                 nvulgar: 'Sapito cavador chaqueño',
 				familia: 'Bufonidae',
-                tamano: 'Pequeño a mediano (33 a 81 mm)',
+                tamano: 'Pequeño a mediano<br>(33 a 81 mm)',
 				habitat: 'Terrestre y fosorial',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'blue',
@@ -294,9 +295,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '5',
-						similarncientifico: 'Rhinella schneideri',
+						similarncientifico: 'Rhinella diptycha',
 						similarnvulgar: 'Rococó',
-						similarclave: 'rhinella_schneideri',
+						similarclave: 'rhinella_diptycha',
 					},
 					{
 						similarid: '6',
@@ -310,6 +311,7 @@ var myApp = new Framework7({
 			{
 				id: 04,
 				clave: 'rhinella_rumbolli',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_rumbolli',
@@ -323,7 +325,7 @@ var myApp = new Framework7({
                 ncientifico: 'Rhinella rumbolli',
                 nvulgar: 'Sapo yungueño de rumboll',
 				familia: 'Bufonidae',
-                tamano: 'Pequeño a mediano (40 a 70 mm)',
+                tamano: 'Pequeño a mediano<br>(40 a 70 mm)',
 				habitat: 'Terrestre',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'yellow',
@@ -372,9 +374,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '5',
-						similarncientifico: 'Rhinella schneideri',
+						similarncientifico: 'Rhinella diptycha',
 						similarnvulgar: 'Rococó',
-						similarclave: 'rhinella_schneideri',
+						similarclave: 'rhinella_diptycha',
 					},
 					{
 						similarid: '6',
@@ -387,10 +389,10 @@ var myApp = new Framework7({
 			},
 			{
 				id: 05,
-				clave: 'rhinella_schneideri',
+				clave: 'rhinella_diptycha',
 				imagenes: [
 					{
-						imagenesclave: 'rhinella_schneideri',
+						imagenesclave: 'rhinella_diptycha',
 						imagenescopyright: 'NombreyApellido',
 					},
 					{
@@ -398,10 +400,10 @@ var myApp = new Framework7({
 						imagenescopyright: 'NombreyApellido',
 					},
 				],
-                ncientifico: 'Rhinella schneideri',
+                ncientifico: 'Rhinella diptycha',
                 nvulgar: 'Rococó',
 				familia: 'Bufonidae',
-                tamano: 'Grande (180 a 210 mm)',
+                tamano: 'Grande<br>(180 a 210 mm)',
 				habitat: 'Terrestre',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -465,10 +467,11 @@ var myApp = new Framework7({
 			},
 			{
 				id: 06,
-				clave: 'rhinella_spinulosa ',
+				clave: 'rhinella_spinulosa',
+				audio : 'display: none;',
 				imagenes: [
 					{
-						imagenesclave: 'rhinella_spinulosa ',
+						imagenesclave: 'rhinella_spinulosa',
 						imagenescopyright: 'NombreyApellido',
 					},
 					{
@@ -476,10 +479,10 @@ var myApp = new Framework7({
 						imagenescopyright: 'NombreyApellido',
 					},
 				],
-                ncientifico: 'Rhinella spinulosa ',
+                ncientifico: 'Rhinella spinulosa',
                 nvulgar: 'Sapo andino',
 				familia: 'Bufonidae',
-                tamano: 'Mediano (65 a 95 mm)',
+                tamano: 'Mediano<br>(65 a 95 mm)',
 				habitat: 'Terrestre',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'blue',
@@ -534,9 +537,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '5',
-						similarncientifico: 'Rhinella schneideri',
+						similarncientifico: 'Rhinella diptycha',
 						similarnvulgar: 'Rococó andino',
-						similarclave: 'rhinella_schneideri ',
+						similarclave: 'rhinella_diptycha ',
 					},
 				],
 				bibliografia: 'Xxx',
@@ -561,7 +564,7 @@ var myApp = new Framework7({
                 ncientifico: 'Ceratophrys cranwelli',
                 nvulgar: 'Escuerzo chaqueño',
 				familia: 'Ceratophryidae',
-                tamano: 'Grande (75 a 130 mm)',
+                tamano: 'Grande<br>(75 a 130 mm)',
 				habitat: 'Terrestre y fosorial',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -609,7 +612,7 @@ var myApp = new Framework7({
                 ncientifico: 'Oreobates barituensis',
                 nvulgar: 'Ranita de hojarasca de Baritú',
 				familia: 'Craugastoridae',
-                tamano: 'Pequeño (20 a 30 mm)',
+                tamano: 'Pequeño<br>(20 a 30 mm)',
 				habitat: 'Terrestre',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -663,11 +666,11 @@ var myApp = new Framework7({
                 ncientifico: 'Oreobates berdemenos',
                 nvulgar: 'Ranita de hojarasca Yungueña',
 				familia: 'Craugastoridae',
-                tamano: 'Pequeño (20 a 40 mm)',
+                tamano: 'Pequeño<br>(20 a 40 mm)',
 				habitat: 'Terrestre',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
-				conservaarg: 'green',
+				conservaarg: 'gray',
 				abundancia: 'green',
 				dvisual: 'red',
 				dauditiva: 'green',
@@ -713,7 +716,7 @@ var myApp = new Framework7({
                 ncientifico: 'Gastrotheca christiani',
                 nvulgar: 'Rana marsupial de Calilegua',
 				familia: 'Hemiphractidae',
-                tamano: 'Pequeño (30 a 40 mm)',
+                tamano: 'Pequeño<br>(30 a 40 mm)',
 				habitat: 'Terrestre',
 				habito: 'Nocturno',
 				conservauicn: 'orange',
@@ -769,7 +772,7 @@ var myApp = new Framework7({
                 ncientifico: 'Boana raniceps',
                 nvulgar: 'Rana trepadora del Chaco',
 				familia: 'Hylidae',
-                tamano: 'Mediano (35 a 65 mm)',
+                tamano: 'Mediano<br>(35 a 65 mm)',
 				habitat: 'Arborícola y acuático',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -835,7 +838,7 @@ var myApp = new Framework7({
                 ncientifico: 'Boana riojana',
                 nvulgar: 'Rana del zarzal',
 				familia: 'Hylidae',
-                tamano: 'Pequeño (45 a 50 mm)',
+                tamano: 'Pequeño<br>(45 a 50 mm)',
 				habitat: 'Acuático',
 				habito: 'Crepuscular y nocturno',
 				conservauicn: 'xxx',
@@ -897,11 +900,11 @@ var myApp = new Framework7({
                 ncientifico: 'Dendropsophus minutus',
                 nvulgar: 'Ranita amarilla',
 				familia: 'Hylidae',
-                tamano: 'Pequeño (20 a 26 mm)',
+                tamano: 'Pequeño<br>(20 a 26 mm)',
 				habitat: 'Arborícola',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
-				conservaarg: 'green',
+				conservaarg: 'gray',
 				abundancia: 'green',
 				dvisual: 'red',
 				dauditiva: 'green',
@@ -963,7 +966,7 @@ var myApp = new Framework7({
                 ncientifico: 'Dendropsophus nanus',
                 nvulgar: 'Ranita amarilla',
 				familia: 'Hylidae',
-                tamano: 'Pequeño (20 a 26 mm)',
+                tamano: 'Pequeño<br>(20 a 26 mm)',
 				habitat: 'Arborícola',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -1017,7 +1020,7 @@ var myApp = new Framework7({
                 ncientifico: 'Scinax fuscovarius',
                 nvulgar: 'Rana trepadora',
 				familia: 'Hylidae',
-                tamano: 'Pequeño (41 a 48 mm)',
+                tamano: 'Pequeño<br>(41 a 48 mm)',
 				habitat: 'Arborícola y terrestre',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -1071,7 +1074,7 @@ var myApp = new Framework7({
                 ncientifico: 'Scinax nasicus',
                 nvulgar: 'Ranita hocicuda lisa',
 				familia: 'Hylidae',
-                tamano: 'Pequeño (27 a 35 mm)',
+                tamano: 'Pequeño<br>(27 a 35 mm)',
 				habitat: 'Arborícola',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -1125,7 +1128,7 @@ var myApp = new Framework7({
                 ncientifico: 'Trachycephalus typhonius',
                 nvulgar: 'Rana lechera',
 				familia: 'Hylidae',
-                tamano: 'Grande (100 a 114 mm)',
+                tamano: 'Grande<br>(100 a 114 mm)',
 				habitat: 'Arborícola',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -1185,7 +1188,7 @@ var myApp = new Framework7({
                 ncientifico: 'Leptodactylus bufonius',
                 nvulgar: 'Rana de labios blancos',
 				familia: 'Leptodactylidae',
-                tamano: 'Mediano (60 a 65 mm)',
+                tamano: 'Mediano<br>(60 a 65 mm)',
 				habitat: 'Terrestre y fosorial',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -1281,7 +1284,7 @@ var myApp = new Framework7({
                 ncientifico: 'Leptodactylus chaquensis',
                 nvulgar: 'Rana criolla',
 				familia: 'Leptodactylidae',
-                tamano: 'Mediano (85 a 90 mm)',
+                tamano: 'Mediano<br>(85 a 90 mm)',
 				habitat: 'Terrestre y acuático',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -1355,17 +1358,29 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'leptodactylus_elenae',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'leptodactylus_elenae1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_elenae2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_elenae3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_elenae4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Leptodactylus elenae',
                 nvulgar: 'Rana marmorada',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño  (49 a 55 mm)',
+                tamano: 'Pequeño<br>(49 a 55 mm)',
 				habitat: 'Terrestre y fosorial',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -1439,17 +1454,29 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'leptodactylus_fuscus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'leptodactylus_fuscus1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_fuscus2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_fuscus3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_fuscus4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Leptodactylus fuscus',
                 nvulgar: 'Rana colorada',
 				familia: 'Leptodactylidae',
-                tamano: 'Mediano (50 a 55 mm)',
+                tamano: 'Mediano<br>(50 a 55 mm)',
 				habitat: 'Fosorial',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -1523,17 +1550,29 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'leptodactylus_gracilis',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'leptodactylus_gracilis1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_gracilis2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_gracilis3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'leptodactylus_gracilis4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Leptodactylus gracilis',
                 nvulgar: 'Rana hocicuda',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño (45 a 50mm)',
+                tamano: 'Pequeño<br>(45 a 50mm)',
 				habitat: 'Terrestre y fosorial',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -1607,17 +1646,25 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'leptodactylus_latinasus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'leptodactylus_latinasus1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'leptodactylus_latinasus2',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'leptodactylus_latinasus3',
+						imagenescopyright: 'L. Pereyra',
 					},
 				],
                 ncientifico: 'Leptodactylus latinasus',
                 nvulgar: 'Ranita de las banquinas',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño (30 a 40 mm)',
+                tamano: 'Pequeño<br>(30 a 40 mm)',
 				habitat: 'Terrestre',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'blue',
@@ -1701,7 +1748,7 @@ var myApp = new Framework7({
                 ncientifico: 'Leptodactylus mystacinus',
                 nvulgar: 'Rana de bigotes',
 				familia: 'Leptodactylidae',
-                tamano: 'Mediano (50 a 60 mm)',
+                tamano: 'Mediano<br>(50 a 60 mm)',
 				habitat: 'Terrestre',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -1785,7 +1832,7 @@ var myApp = new Framework7({
                 ncientifico: 'Physalaemus biligonigerus',
                 nvulgar: 'Rana llorona',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño (35 a 40 mm)',
+                tamano: 'Pequeño<br>(35 a 40 mm)',
 				habitat: 'Terrestre y acuático',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'blue',
@@ -1816,9 +1863,9 @@ var myApp = new Framework7({
 				similares: [
 					{
 						similarid: '26',
-						similarncientifico: 'Physalaemus cuqui',
+						similarncientifico: 'Physalaemus albonotatus',
 						similarnvulgar: 'Ranita llorona',
-						similarclave: 'physalaemus_cuqui',
+						similarclave: 'physalaemus_albonotatus',
 					},
 					{
 						similarid: '27',
@@ -1849,10 +1896,10 @@ var myApp = new Framework7({
 			},
 			{
 				id: 26,
-				clave: 'physalaemus_cuqui',
+				clave: 'physalaemus_albonotatus',
 				imagenes: [
 					{
-						imagenesclave: 'physalaemus_cuqui',
+						imagenesclave: 'physalaemus_albonotatus',
 						imagenescopyright: 'NombreyApellido',
 					},
 					{
@@ -1860,10 +1907,10 @@ var myApp = new Framework7({
 						imagenescopyright: 'NombreyApellido',
 					},
 				],
-                ncientifico: 'Physalaemus cuqui',
+                ncientifico: 'Physalaemus albonotatus',
                 nvulgar: 'Ranita llorona',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño (27 a 32 mm)',
+                tamano: 'Pequeño<br>(27 a 32 mm)',
 				habitat: 'Terrestre y acuático',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'blue',
@@ -1928,6 +1975,7 @@ var myApp = new Framework7({
 			{
 				id: 29,
 				clave: 'pleurodema_borellii',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'pleurodema_borellii',
@@ -1941,7 +1989,7 @@ var myApp = new Framework7({
                 ncientifico: 'Pleurodema borellii',
                 nvulgar: 'Ranita cuatro ojos',
 				familia: 'Leptodactylidae',
-                tamano: 'Mediano (40 a 55 mm)',
+                tamano: 'Mediano<br>(40 a 55 mm)',
 				habitat: 'Terrestre y acuático',
 				habito: 'Diurno, nocturno',
 				conservauicn: 'blue',
@@ -1978,9 +2026,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '26',
-						similarncientifico: 'Pleuroderma cuqui',
+						similarncientifico: 'Pleuroderma albonotatus',
 						similarnvulgar: 'Ranita llorona',
-						similarclave: 'pleurodema_cuqui',
+						similarclave: 'pleurodema_albonotatus',
 					},
 					{
 						similarid: '28',
@@ -2019,7 +2067,7 @@ var myApp = new Framework7({
                 ncientifico: 'Pleurodema cinereum',
                 nvulgar: 'Ranita cuatro ojos de la puna',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño (35 a 45 mm)',
+                tamano: 'Pequeño<br>(35 a 45 mm)',
 				habitat: 'Terrestre',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -2056,9 +2104,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '26',
-						similarncientifico: 'Pleuroderma cuqui',
+						similarncientifico: 'Pleuroderma albonotatus',
 						similarnvulgar: 'Ranita llorona',
-						similarclave: 'pleurodema_cuqui',
+						similarclave: 'pleurodema_albonotatus',
 					},
 					{
 						similarid: '27',
@@ -2097,7 +2145,7 @@ var myApp = new Framework7({
                 ncientifico: 'Pleurodema marmoratum',
                 nvulgar: 'Sapo veteado de cuatro ojos',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño (30 a 35 mm)',
+                tamano: 'Pequeño<br>(30 a 35 mm)',
 				habitat: 'Terrestre',
 				habito: 'Diurno, nocturno, crepuscular',
 				conservauicn: 'blue',
@@ -2134,9 +2182,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '26',
-						similarncientifico: 'Pleuroderma cuqui',
+						similarncientifico: 'Pleuroderma albonotatus',
 						similarnvulgar: 'Ranita llorona',
-						similarclave: 'pleurodema_cuqui',
+						similarclave: 'pleurodema_albonotatus',
 					},
 					{
 						similarid: '27',
@@ -2175,7 +2223,7 @@ var myApp = new Framework7({
                 ncientifico: 'Pleurodema tucumanum',
                 nvulgar: 'Ranita cuatro ojos',
 				familia: 'Leptodactylidae',
-                tamano: 'Pequeño (40 a 45 mm)',
+                tamano: 'Pequeño<br>(40 a 45 mm)',
 				habitat: 'Terrestre',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -2212,9 +2260,9 @@ var myApp = new Framework7({
 					},
 					{
 						similarid: '26',
-						similarncientifico: 'Pleuroderma cuqui',
+						similarncientifico: 'Pleuroderma albonotatus',
 						similarnvulgar: 'Ranita llorona',
-						similarclave: 'pleurodema_cuqui',
+						similarclave: 'pleurodema_albonotatus',
 					},
 					{
 						similarid: '27',
@@ -2253,7 +2301,7 @@ var myApp = new Framework7({
                 ncientifico: 'Dermatonotus muelleri',
                 nvulgar: 'Sapito tacurú',
 				familia: 'Microhylidae',
-                tamano: 'Pequeño (40 a 50 mm)',
+                tamano: 'Pequeño<br>(40 a 50 mm)',
 				habitat: 'Fosorial',
 				habito: 'Nocturno',
 				conservauicn: 'blue',
@@ -2313,7 +2361,7 @@ var myApp = new Framework7({
                 ncientifico: 'Elachistocleis haroi',
                 nvulgar: 'Ranita aceituna',
 				familia: 'Microhylidae',
-                tamano: 'Pequeño (25 a 30 mm)',
+                tamano: 'Pequeño<br>(25 a 30 mm)',
 				habitat: 'Fosorial',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -2379,7 +2427,7 @@ var myApp = new Framework7({
                 ncientifico: 'Elachistocleis skotogaster',
                 nvulgar: 'Ranita aceituna panza negra',
 				familia: 'Microhylidae',
-                tamano: 'Pequeño (28 a 35 mm)',
+                tamano: 'Pequeño<br>(28 a 35 mm)',
 				habitat: 'Fosorial',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -2433,7 +2481,7 @@ var myApp = new Framework7({
                 ncientifico: 'Odontophrynus americanus',
                 nvulgar: 'Escuercito',
 				familia: 'Odontophrynae',
-                tamano: 'Mediano (60 a 70 mm)',
+                tamano: 'Mediano<br>(60 a 70 mm)',
 				habitat: 'Terrestre y fosorial',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -2487,7 +2535,7 @@ var myApp = new Framework7({
                 ncientifico: 'Odontophrynus lavillai',
                 nvulgar: 'Escuercito',
 				familia: 'Odontophrynae',
-                tamano: 'Mediano (60 a 70 mm)',
+                tamano: 'Mediano<br>(60 a 70 mm)',
 				habitat: 'Terrestre y fosorial',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -2541,7 +2589,7 @@ var myApp = new Framework7({
                 ncientifico: 'Phyllomedusa boliviana',
                 nvulgar: 'Rana mono yungueña',
 				familia: 'Phyllomedusidae',
-                tamano: 'Mediano (65 a 80 mm)',
+                tamano: 'Mediano<br>(65 a 80 mm)',
 				habitat: 'Arborícola',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -2595,7 +2643,7 @@ var myApp = new Framework7({
                 ncientifico: 'Phyllomedusa sauvagii',
                 nvulgar: 'Rana mono',
 				familia: 'Phyllomedusidae',
-                tamano: 'Mediano (65 a 96 mm)',
+                tamano: 'Mediano<br>(65 a 96 mm)',
 				habitat: 'Arborícola',
 				habito: 'Crepuscular, nocturno',
 				conservauicn: 'blue',
@@ -2636,6 +2684,7 @@ var myApp = new Framework7({
 			{
 				id: 38,
 				clave: 'telmatobius_hypselocephalus',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_hypselocephalus',
@@ -2649,7 +2698,7 @@ var myApp = new Framework7({
                 ncientifico: 'Telmatobius hypselocephalus',
                 nvulgar: 'Rana acuática Yungueña',
 				familia: 'Telmatobiidae',
-                tamano: 'Mediano (58 a 68 mm)',
+                tamano: 'Mediano<br>(58 a 68 mm)',
 				habitat: 'Acuático',
 				habito: 'Nocturno',
 				conservauicn: 'orange',
@@ -2708,6 +2757,7 @@ var myApp = new Framework7({
 			{
 				id: 39,
 				clave: 'telmatobius_marmoratus',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_marmoratus',
@@ -2721,7 +2771,7 @@ var myApp = new Framework7({
                 ncientifico: 'Telmatobius marmoratus',
                 nvulgar: 'Rana acuática',
 				familia: 'Telmatobiidae',
-                tamano: 'Mediano (55 a 63 mm)',
+                tamano: 'Mediano<br>(55 a 63 mm)',
 				habitat: 'Acuático y terrestre',
 				habito: 'Nocturno',
 				conservauicn: 'yellow',
@@ -2780,6 +2830,7 @@ var myApp = new Framework7({
 			{
 				id: 40,
 				clave: 'telmatobius_oxycephalus',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_oxycephalus',
@@ -2793,7 +2844,7 @@ var myApp = new Framework7({
                 ncientifico: 'Telmatobius oxycephalus',
                 nvulgar: 'Rana acuática',
 				familia: 'Telmatobiidae',
-                tamano: 'Mediano (45 a 57 mm)',
+                tamano: 'Mediano<br>(45 a 57 mm)',
 				habitat: 'Acuático',
 				habito: 'Nocturno',
 				conservauicn: 'yellow',
@@ -2852,6 +2903,7 @@ var myApp = new Framework7({
 			{
 				id: 41,
 				clave: 'telmatobius_platycephalus',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_platycephalus',
@@ -2865,7 +2917,7 @@ var myApp = new Framework7({
                 ncientifico: 'Telmatobius platycephalus',
                 nvulgar: 'Rana acuática marmolada',
 				familia: 'Telmatobiidae',
-                tamano: 'Mediano (58 a 61 mm)',
+                tamano: 'Mediano<br>(58 a 61 mm)',
 				habitat: 'Acuático',
 				habito: 'Nocturno',
 				conservauicn: 'orange',
@@ -2924,6 +2976,7 @@ var myApp = new Framework7({
 			{
 				id: 42,
 				clave: 'telmatobius_rubigo',
+				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_rubigo',
@@ -2937,7 +2990,7 @@ var myApp = new Framework7({
                 ncientifico: 'Telmatobius rubigo',
                 nvulgar: 'Rana herrumbrada de Pozuelos',
 				familia: 'Telmatobiidae',
-                tamano: 'Mediano (40 a 54 mm)',
+                tamano: 'Mediano<br>(40 a 54 mm)',
 				habitat: 'Acuático',
 				habito: 'XNocturnoxxx',
 				conservauicn: 'blue',
@@ -3011,16 +3064,3 @@ var mainView = myApp.addView('.view-main', {
     // Enable dynamic Navbar
     dynamicNavbar: true,
 });
-
-// Audio
-function playPause() {
-    var miAudio = document.getElementById("audioCanto");
-	var miLink = document.getElementById("linkCanto");
-	if (miAudio.paused) {
-		miAudio.play();
-		miLink.innerHTML = "<i class='f7-icons color-white animation3 flash'>pause_round_fill</i>";
-	} else {
-		miAudio.pause();
-		miLink.innerHTML = "<i class='f7-icons color-white'>play_round_fill</i>";
-	}
-}

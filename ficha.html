@@ -23,7 +23,7 @@
 						<div class="swiper-container swiper-init demo-swiper card-header no-border" style="padding: 0;height: auto;border-radius: 5px;border-radius: 5px 5px 0 0;">
 							<div class="swiper-wrapper">{{#each imagenes}}
 								<div class="swiper-slide">
-									<img src="images/especies/{{imagenesclave}}.jpg" style="width: 100%">
+									<img src="images/especies/{{imagenesclave}}.jpg" onerror="this.src='images/default.jpg';" style="width: 100%">
 									<div class="topleft color-white copyright" style="mix-blend-mode:screen;">© {{imagenescopyright}}</div>
 								</div>{{/each}}
 							</div>
@@ -90,12 +90,11 @@
 								</p>
 								<!-- FIN BOTONES ESTADO -->
 
+								<!-- REPRODUCTOR CANTO -->
 								<div style="{{audio}}">
-								<a href="javascript:playPause();" id="linkCanto" class="button button-big button-fill button-raised color-indigo" style="border-radius: 25px;">
-									<div>Reproducir canto</div>
-								</a>
-								<audio id="audioCanto" loop><source src="audio/{{clave}}.mp3" type="audio/mpeg"></audio>
+								<audio id="audioCanto" preload="auto" controls loop style="width:100%; border-radius:5px;"><source src="audio/{{clave}}.mp3" type="audio/mpeg"></audio>
 								</div>
+								<!-- FIN REPRODUCTOR CANTO -->
 
 							</div>
 						</div>
@@ -111,7 +110,7 @@
 					<h3 class="color-black">Características</h3>
 					<p class="justificado">{{caracteristicas}}</p>
 
-					<h3 class="color-black">Microhábitats</h3>
+					<h3 class="color-black">¿Dónde se los encuentran?</h3>
 					<p class="justificado">{{microhabitats}}</p>
 
 					<div class="card" style="border-radius: 5px;">
@@ -126,7 +125,7 @@
 						</div>
 					</div>
 
-					<h3 class="color-black">¿Cómo se reproduce?</h3>
+					<h3 class="color-black">¿Cómo se reproducen?</h3>
 					<p class="justificado">{{modoreproductivo}}</p>
 
 					<div class="card" style="border-radius: 5px;">
@@ -139,7 +138,7 @@
 										<li>
 										<a href="ficha.html" data-context-name="lista.{{similarid}}" class="item-link" data-reload="true" data-ignore-cache="true">
 											<div class="item-content">
-												<div class="item-media"><img src="images/especies/{{similarclave}}.jpg" width="40px"></div>
+												<div class="item-media"><img src="images/especies/{{similarclave}}.jpg" onerror="this.src='images/default.jpg';" width="40px"></div>
 												<div class="item-inner">
 													<div class="item-title-row"  style="background-image: url()">
 														<div class="item-title color-green"><i>{{similarncientifico}}</i></div>
