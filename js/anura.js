@@ -2,27 +2,22 @@
 	navigator.serviceWorker
 	.register('../sw.js')
 	.then(function() {
-		console.log("Service Worker registered successfully");
+		console.log("Service Worker registrado correctamente");
 	})
 	.catch(function() {
-		console.log("Service worker registration failed")
+		console.log("Error en el registro del service worker")
 	});
 }
 
-// Let's register Template7 helper so we can pass json string in links
 Template7.registerHelper('json_stringify', function (context) {
     return JSON.stringify(context);
 });
 
-// Initialize your app
 var myApp = new Framework7({
 	material: true,
     animateNavBackIcon: true,
-    // Enable templates auto precompilation
     precompileTemplates: true,
-    // Enabled pages rendering using Template7
     template7Pages: true,
-    // Specify Template7 data for pages
     template7Data: {
         lista: [
 			{
@@ -3056,11 +3051,8 @@ var myApp = new Framework7({
 	}
 });
 
-// Export selectors engine
 var $$ = Dom7;
 
-// Add main View
 var mainView = myApp.addView('.view-main', {
-    // Enable dynamic Navbar
     dynamicNavbar: true,
 });

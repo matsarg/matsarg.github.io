@@ -37,14 +37,14 @@
 		</div>
 	 
 		<!-- RESULTADOS, LISTA COMPLETA -->
-		<div class="list-block list-block-search searchbar-found card-list" style="margin: 10px">
+		<div class="list-block list-block-search searchbar-found card-list" style="margin: 15px 10px">
 		  <ul id="lista-especies" class="row">
 			{{#each this}}
 			<li class="col-33 tablet-20 desktop-10" style="margin: 0 0 17px">
 			<a href="ficha.html" data-context-name="lista.{{@index}}">
-				<div class="animated zoomIn card lista-card-header-pic chips-lista" style="-webkit-animation-duration:.6s;animation-duration:.6s;">
-					<div style="display: none;">{{ncientifico}}{{nvulgar}}{{familia}}</div> <!-- CRITERIOS DE BUSQUEDA -->
-					<div style="background-image:url(images/especies/{{clave}}.jpg),url(images/default.jpg);padding: 4px;" valign="bottom" class="lazy card-header chips-lista color-white no-border">
+				<div class="animated zoomIn card lista-card-header-pic chips-lista" style="border-radius: 5px;margin: -3px;-webkit-animation-duration:.6s;animation-duration:.6s;">
+					<div style="display: none;">{{ncientifico}} {{nvulgar}} {{familia}}</div> <!-- CRITERIOS DE BUSQUEDA -->
+					<div style="background-image:url(images/especies/{{clave}}.jpg),url(images/default.jpg);padding: 4px;border-radius: 5px;" valign="bottom" class="lazy card-header chips-lista color-white no-border">
 						<div class="animated zoomIn fichancientifico color-white" style="text-shadow: 1px 1px 1px rgb(0, 0, 0);-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .2s;animation-delay: .2s;"><i>{{ncientifico}}</i></div>
 						<div class="animated zoomIn chip bg-{{conservauicn}}" style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .2s;animation-delay: .2s;"><div class="chip-label color-white">UICN</div></div>
 						<div class="animated zoomIn chip bg-{{conservaarg}}"  style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .3s;animation-delay: .3s;"><div class="chip-label color-white">ARG</div></div>
