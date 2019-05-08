@@ -26,11 +26,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'melanophryniscus_rubriventris',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'melanophryniscus_rubriventris1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'melanophryniscus_rubriventris2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'melanophryniscus_rubriventris3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'melanophryniscus_rubriventris4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Melanophryniscus rubriventris',
@@ -597,11 +609,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'oreobates_barituensis',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'oreobates_barituensis1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'oreobates_barituensis2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'oreobates_barituensis3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'oreobates_barituensis4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Oreobates barituensis',
@@ -1733,11 +1757,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'leptodactylus_mystacinus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'leptodactylus_mystacinus1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'leptodactylus_mystacinus2',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'leptodactylus_mystacinus3',
+						imagenescopyright: 'L. Pereyra',
 					},
 				],
                 ncientifico: 'Leptodactylus mystacinus',
@@ -2466,11 +2498,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'odontophrynus_americanus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'odontophrynus_americanus1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'odontophrynus_americanus2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'odontophrynus_americanus3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'odontophrynus_americanus4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Odontophrynus americanus',
@@ -2574,11 +2618,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'phyllomedusa_boliviana',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'phyllomedusa_boliviana1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'phyllomedusa_boliviana2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'phyllomedusa_boliviana3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'phyllomedusa_boliviana4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Phyllomedusa boliviana',
@@ -2628,11 +2684,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'phyllomedusa_sauvagii',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'phyllomedusa_sauvagii1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'phyllomedusa_sauvagii2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'phyllomedusa_sauvagii3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'phyllomedusa_sauvagii4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Phyllomedusa sauvagii',
