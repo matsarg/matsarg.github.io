@@ -24,7 +24,7 @@
 							<div class="swiper-wrapper">{{#each imagenes}}
 								<div class="swiper-slide">
 									<img src="images/especies/{{imagenesclave}}.jpg" onerror="this.src='images/default.jpg';" style="width: 100%">
-									<div class="topleft color-white copyright" style="mix-blend-mode:screen;">© {{imagenescopyright}}</div>
+									<div class="topleft color-white copyright" style="text-shadow: 1px 1px 1px rgb(0, 0, 0);">© {{imagenescopyright}}</div>
 								</div>{{/each}}
 							</div>
 						</div>
@@ -82,11 +82,11 @@
 								
 								<!-- BOTONES ESTADO -->
 								<p class="buttons-row estado">
-									<a href="#" data-picker=".picker-uicn{{conservauicn}}"     class="button button-big button-fill button-raised color-{{conservauicn}} open-picker">UICN</a>
-									<a href="#" data-picker=".picker-arg{{conservaarg}}"       class="button button-big button-fill button-raised color-{{conservaarg}} open-picker">ARG</a>
-									<a href="#" data-picker=".picker-abundancia{{abundancia}}" class="button button-big button-fill button-raised color-{{abundancia}} open-picker"><i class="f7-icons">graph_round</i></a>
-									<a href="#" data-picker=".picker-dvisual{{dvisual}}"       class="button button-big button-fill button-raised color-{{dvisual}} open-picker"><i class="f7-icons">eye</i></a>
-									<a href="#" data-picker=".picker-dauditiva{{dauditiva}}"   class="button button-big button-fill button-raised color-{{dauditiva}} open-picker"><i class="f7-icons">radio</i></a>
+									<a href="#" data-picker=".picker-uicn{{conservauicn}}"     style="text-shadow: 1px 1px 1px rgb(0, 0, 0);" class="button button-big button-fill button-raised color-{{conservauicn}} open-picker">UICN</a>
+									<a href="#" data-picker=".picker-arg{{conservaarg}}"       style="text-shadow: 1px 1px 1px rgb(0, 0, 0);" class="button button-big button-fill button-raised color-{{conservaarg}} open-picker">ARG</a>
+									<a href="#" data-picker=".picker-abundancia{{abundancia}}" style="text-shadow: 1px 1px 1px rgb(0, 0, 0);" class="button button-big button-fill button-raised color-{{abundancia}} open-picker"><i class="f7-icons">graph_round</i></a>
+									<a href="#" data-picker=".picker-dvisual{{dvisual}}"       style="text-shadow: 1px 1px 1px rgb(0, 0, 0);" class="button button-big button-fill button-raised color-{{dvisual}} open-picker"><i class="f7-icons">eye</i></a>
+									<a href="#" data-picker=".picker-dauditiva{{dauditiva}}"   style="text-shadow: 1px 1px 1px rgb(0, 0, 0);" class="button button-big button-fill button-raised color-{{dauditiva}} open-picker"><i class="f7-icons">radio</i></a>
 								</p>
 								<!-- FIN BOTONES ESTADO -->
 
@@ -127,6 +127,15 @@
 						</div>
 					</div>
 
+					<br>
+					<div class="card" style="border-radius: 5px;">
+						<div class="card-content">
+							<div class="card-content-inner">
+								<p>MAPA</p>
+							</div>
+						</div>
+					</div>
+
 					<h3 class="color-black">¿Cómo se reproducen?</h3>
 					<p class="justificado">{{modoreproductivo}}</p>
 
@@ -157,7 +166,7 @@
 						</div>
 					</div>
 
-					<div class="list-block accordion-list">
+					<!---<div class="list-block accordion-list">
 						<ul>
 							<li class="accordion-item">
 								<a href="#" class="item-content item-link">
@@ -172,7 +181,7 @@
 								</div>
 							</li>
 						</ul>
-					</div>
+					</div>-->
 
 				</div>
 				<!-- FIN COLUMNA DER (TABLET) -->

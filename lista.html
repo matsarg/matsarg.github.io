@@ -38,6 +38,7 @@
 	 
 		<!-- RESULTADOS, LISTA COMPLETA -->
 		<div class="list-block list-block-search searchbar-found card-list" style="margin: 15px 10px">
+
 		  <ul id="lista-especies" class="row">
 			{{#each this}}
 			<li class="col-33 tablet-20 desktop-10" style="margin: 0 0 17px">
@@ -46,11 +47,11 @@
 					<div style="display: none;">{{ncientifico}} {{nvulgar}} {{familia}}</div> <!-- CRITERIOS DE BUSQUEDA -->
 					<div style="background-image:url(images/especies/{{clave}}.jpg),url(images/default.jpg);padding: 4px;border-radius: 5px;" valign="bottom" class="lazy card-header chips-lista color-white no-border">
 						<div class="animated zoomIn fichancientifico color-white" style="text-shadow: 1px 1px 1px rgb(0, 0, 0);-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .2s;animation-delay: .2s;"><i>{{ncientifico}}</i></div>
-						<div class="animated zoomIn chip bg-{{conservauicn}}" style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .2s;animation-delay: .2s;"><div class="chip-label color-white">UICN</div></div>
-						<div class="animated zoomIn chip bg-{{conservaarg}}"  style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .3s;animation-delay: .3s;"><div class="chip-label color-white">ARG</div></div>
-						<div class="animated zoomIn chip bg-{{abundancia}}"   style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .4s;animation-delay: .4s;"><div class="chip-media"><i class="f7-icons color-white chippeque">graph_round</i></div></div>
-						<div class="animated zoomIn chip bg-{{dvisual}}"      style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .5s;animation-delay: .5s;"><div class="chip-media"><i class="f7-icons color-white chippeque">eye</i></div></div>
-						<div class="animated zoomIn chip bg-{{dauditiva}}"    style="-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .6s;animation-delay: .6s;"><div class="chip-media"><i class="f7-icons color-white chippeque">radio</i></div></div>
+						<div class="animated zoomIn chip bg-{{conservauicn}}" style="text-shadow: 1px 1px 1px rgb(0, 0, 0);-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .2s;animation-delay: .2s;"><div class="chip-label color-white">UICN</div></div>
+						<div class="animated zoomIn chip bg-{{conservaarg}}"  style="text-shadow: 1px 1px 1px rgb(0, 0, 0);-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .3s;animation-delay: .3s;"><div class="chip-label color-white">ARG</div></div>
+						<div class="animated zoomIn chip bg-{{abundancia}}"   style="text-shadow: 1px 1px 1px rgb(0, 0, 0);-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .4s;animation-delay: .4s;"><div class="chip-media"><i class="f7-icons color-white chippeque">graph_round</i></div></div>
+						<div class="animated zoomIn chip bg-{{dvisual}}"      style="text-shadow: 1px 1px 1px rgb(0, 0, 0);-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .5s;animation-delay: .5s;"><div class="chip-media"><i class="f7-icons color-white chippeque">eye</i></div></div>
+						<div class="animated zoomIn chip bg-{{dauditiva}}"    style="text-shadow: 1px 1px 1px rgb(0, 0, 0);-webkit-animation-duration: .7s;animation-duration: .7s;-webkit-animation-delay: .6s;animation-delay: .6s;"><div class="chip-media"><i class="f7-icons color-white chippeque">radio</i></div></div>
 					</div>
 				</div>
 			</a>
