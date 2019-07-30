@@ -77,6 +77,12 @@ var myApp = new Framework7({
 				distrijujuy: 'Xxxx',
 				modoreproductivo: 'Depositan los huevos en el agua en grupos de no más de 15 huevos adheridos entre sí.',
 				similares: [
+					{
+						similarid: '0',
+						similarncientifico: 'Desconocido',
+						similarnvulgar: 'No se encuentran especies similares',
+						similarclave: '',
+					},
 				],
 				bibliografia: 'Xxx',
 			},
@@ -86,11 +92,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_arenarum_arenarum',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'rhinella_arenarum_arenarum1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'rhinella_arenarum_arenarum2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_arenarum_arenarum3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_arenarum_arenarum4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Rhinella arenarum arenarum',
@@ -165,11 +183,15 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_gallardoi',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'rhinella_gallardoi1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_gallardoi2',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Rhinella gallardoi',
@@ -243,11 +265,15 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_major',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'rhinella_major1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_major2',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Rhinella major',
@@ -322,11 +348,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_rumbolli',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'rhinella_rumbolli1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'rhinella_rumbolli2',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'rhinella_rumbolli3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_rumbolli4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Rhinella rumbolli',
@@ -400,11 +438,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_diptycha',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'rhinella_diptycha',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'rhinella_diptycha',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_diptycha',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_diptycha',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Rhinella diptycha',
@@ -479,11 +529,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'rhinella_spinulosa',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'rhinella_spinulosa1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_spinulosa2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'rhinella_spinulosa3',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Rhinella spinulosa',
@@ -675,11 +733,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'oreobates_berdemenos',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'oreobates_berdemenos1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'oreobates_berdemenos2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'oreobates_berdemenos3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'oreobates_berdemenos4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Oreobates berdemenos',
@@ -1029,11 +1099,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'scinax_fuscovarius',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'scinax_fuscovarius1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'scinax_fuscovarius2',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'scinax_fuscovarius3',
+						imagenescopyright: 'L. Pereyra',
 					},
 				],
                 ncientifico: 'Scinax fuscovarius',
@@ -1083,11 +1161,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'scinax_nasicus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'scinax_nasicus1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'scinax_nasicus2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'scinax_nasicus3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'scinax_nasicus4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Scinax nasicus',
@@ -1137,11 +1227,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'trachycephalus_typhonius',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'trachycephalus_typhonius1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'trachycephalus_typhonius2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'trachycephalus_typhonius3',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Trachycephalus typhonius',
@@ -1927,11 +2025,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'physalaemus_albonotatus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'physalaemus_albonotatus1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'physalaemus_albonotatus2',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'physalaemus_albonotatus3',
+						imagenescopyright: 'L. Pereyra',
 					},
 				],
                 ncientifico: 'Physalaemus albonotatus',
@@ -2000,17 +2106,29 @@ var myApp = new Framework7({
 				bibliografia: 'Xxx',
 			},
 			{
-				id: 29,
+				id: 27,
 				clave: 'pleurodema_borellii',
 				audio : 'display: none;',
 				imagenes: [
 					{
 						imagenesclave: 'pleurodema_borellii',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'pleurodema_borellii1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'pleurodema_borellii2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'pleurodema_borellii3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'pleurodema_borellii14',
+						imagenescopyright: 'L. Pereyra',
 					},
 				],
                 ncientifico: 'Pleurodema borellii',
@@ -2240,11 +2358,11 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'pleurodema_tucumanum',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'pleurodema_tucumanum1',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Pleurodema tucumanum',
@@ -2824,11 +2942,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_marmoratus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'telmatobius_marmoratus1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_marmoratus2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_marmoratus3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_marmoratus4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Telmatobius marmoratus',
@@ -2897,11 +3027,15 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_oxycephalus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'L. Pereyra',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'telmatobius_oxycephalus1',
+						imagenescopyright: 'L. Pereyra',
+					},
+					{
+						imagenesclave: 'telmatobius_oxycephalus2',
+						imagenescopyright: 'L. Pereyra',
 					},
 				],
                 ncientifico: 'Telmatobius oxycephalus',
@@ -2970,11 +3104,19 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_platycephalus',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'telmatobius_platycephalus1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_platycephalus2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_platycephalus3',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Telmatobius platycephalus',
@@ -3043,11 +3185,23 @@ var myApp = new Framework7({
 				imagenes: [
 					{
 						imagenesclave: 'telmatobius_rubigo',
-						imagenescopyright: 'NombreyApellido',
+						imagenescopyright: 'M. Akmentins',
 					},
 					{
-						imagenesclave: 'xxx_xxx',
-						imagenescopyright: 'NombreyApellido',
+						imagenesclave: 'telmatobius_rubigo1',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_rubigo2',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_rubigo3',
+						imagenescopyright: 'M. Akmentins',
+					},
+					{
+						imagenesclave: 'telmatobius_rubigo4',
+						imagenescopyright: 'M. Akmentins',
 					},
 				],
                 ncientifico: 'Telmatobius rubigo',
@@ -3122,5 +3276,5 @@ var myApp = new Framework7({
 var $$ = Dom7;
 
 var mainView = myApp.addView('.view-main', {
-    dynamicNavbar: true,
+	dynamicNavbar: true,
 });
