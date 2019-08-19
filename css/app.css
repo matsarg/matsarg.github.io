@@ -1,0 +1,62 @@
+/* Your app styles here */
+.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
+  display: none;
+}
+.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
+  display: none;
+}
+.list ul::before {
+  display:none;
+}
+.demo-expandable-cards .card-expandable {
+  height: 74vw;
+}
+.ncientificocard {
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  position: absolute;
+  margin-top: -75vw;
+  margin-left: 17px;
+  font-size: 7vw;
+  word-spacing: 100vw;
+}
+@media (min-width:768px) {
+  .demo-expandable-cards {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .demo-expandable-cards .card {
+    flex-shrink:10;
+    min-width:0
+  }
+  .demo-expandable-cards .card-expandable {
+    height: 502px;
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .demo-expandable-cards .card {
+    width:calc((100% - var(--f7-card-expandable-margin-horizontal) * 6)/3);
+    margin-top:0;
+    margin-right:9px;
+  }
+  .ncientificocard {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 17px;
+    font-size: 26px;
+    word-spacing: 100vw;
+  }
+}
+@media (min-width:1024px) {
+  .demo-expandable-cards .card {
+    width:calc((100% - var(--f7-card-expandable-margin-horizontal) * 8)/4);
+    margin-top:0;
+    margin-right:9px;
+  }
+  .demo-expandable-cards .card:nth-child(n+2) {
+    margin-left:13px;
+  }
+}
+.chip {
+  padding-right: 0;
+}

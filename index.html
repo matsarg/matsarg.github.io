@@ -1,287 +1,131 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="default">
-		<meta name="apple-mobile-web-app-title" content="Anura">
-		<meta name="application-name" content="Anura">
-		<link rel="apple-touch-icon" sizes="180x180" href="/iconos/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/iconos/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/iconos/favicon-16x16.png">
-		<link rel="mask-icon" href="/iconos/safari-pinned-tab.svg" color="#4caf50">
-		<meta name="msapplication-TileColor" content="#4caf50">
-		<meta name="theme-color" content="#4caf50">
-		<title>Anura</title>
-		<link rel="stylesheet" href="css/framework7.material.min.css">
-		<link rel="stylesheet" href="css/framework7.material.colors.min.css">
-		<link rel="stylesheet" href="css/framework7.icons.css">
-		<link rel="stylesheet" href="css/anura.css">
-		<link rel="stylesheet" href="css/animate.css">
-		<link rel="manifest" href="/manifest.json">
-  </head>
-  <body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#ff9500">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Anura</title>
+  <link rel="stylesheet" href="css/framework7.bundle.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="app" class="color-theme-orange">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
 
-	<!-- Links popover -->
-	<div class="popover popover-menu popover-links">
-		<div class="popover-angle"></div>
-		<div class="popover-inner">
-			<div class="list-block" style="text-align: center;">
-			<ul>
-				<li><a href="#" data-popup=".popup-anuros" class="ripple-deeporange list-button item-link open-popup close-popover">Sobre los Anuros</a></li>
-				<li><a href="#" data-popup=".popup-iconografia" class="ripple-blue list-button item-link open-popup close-popover">Iconografía</a></li>
-				<li><a href="#" data-popup=".popup-acercade" class="ripple-green list-button item-link open-popup close-popover">Acerca de</a></li>
-			</ul>
-			</div>
-		</div>
-	</div>
-  
-	<!-- POPUP ANUROS -->
-	<div class="popup popup-anuros">
-		<div class="navbar bg-deeporange">
-			<a href="#" class="close-popup">
-			<div class="navbar-inner">
-				<div class="center color-white">Sobre los Anuros</div>
-				<div class="right" style="margin-right: 20px;"><i class="f7-icons color-white">close</i></div>
-			</div>
-			</a>
-		</div>
-		<div class="content-block inset">
-			<div class="content-block-inner" style="padding: 0px 16px">
-				<p class="justificado">Los <b>anuros</b> son un grupo de animales comúnmente conocidos como <b>sapos y ranas</b>. Se caracterizan por presentar un cuerpo corto y ensanchando, cuatro patas y carecen de cola. Suelen estar asociados al agua, sin embargo hay especies que se han independizado totalmente de ella. Podemos observarlos frecuentemente de noche, momento en el que la mayoría de las especies están activas. Los machos tienen la capacidad de emitir cantos para atraer a las hembras a los sitios en donde se reproducen. En general, el ciclo de vida de los anuros incluye una fase en la tierra, donde viven los juveniles y adultos, y una fase en el agua, donde se desarrollan los huevos y los renacuajos. Sin embargo, existen muchas variantes a este esquema general de ciclo de vida.</p>
-				<p class="justificado">Queda claro hasta ahora, que los anuros son un grupo de organismos muy diverso, no sólo en número, con cerca de 7000 especies descriptas en todo el mundo, sino también en hábitos, modos reproductivos y comportamiento.</p>
-				<p class="justificado">Este catálogo los invita a introducirse en el fascinante mundo de este grupo de animales y conocer cada una las especies que podemos encontrar en la provincia de Jujuy, sean bienvenidos.</p>
-			</div>
-		</div>
-	</div>
-	<!-- FIN POPUP ANUROS -->
+    <!-- Right panel with reveal effect-->
+    <div class="panel panel-right panel-cover theme-dark">
+      <div class="view">
+        <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title">Right Panel</div>
+            </div>
+          </div>
+          <div class="page-content">
+            <div class="block">Right panel content goes here</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- POPUP ICONOGRAFIA -->
-	<div class="popup popup-iconografia">
-			<div class="navbar">
-				<a href="#" class="close-popup">
-				<div class="navbar-inner">
-					<div class="center color-white">Iconografía</div>
-					<div class="right" style="margin-right: 20px;"><i class="f7-icons color-white">close</i></div>
-				</div>
-				</a>
-			</div>
+    <!-- Views/Tabs container -->
+    <div class="views tabs safe-areas">
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar tabbar-labels toolbar-bottom">
+        <div class="toolbar-inner">
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons ios-only">home</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+            <i class="icon material-icons md-only">home</i>
+            <span class="tabbar-label">Inicio</span>
+          </a>
+          <a href="#view-especies" class="tab-link">
+            <i class="icon f7-icons ios-only">list</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+            <i class="icon material-icons md-only">view_list</i>
+            <span class="tabbar-label">Especies</span>
+          </a>
+        </div>
+      </div>
+      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+      <div id="view-home" class="view view-main tab tab-active">
+        <!-- Page, data-name contains page name which can be used in page callbacks -->
+        <div class="page" data-name="home">
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title sliding">Anura</div>
+              <div class="right">
+                <a href="#" class="link icon-only panel-open" data-panel="right">
+                  <i class="icon f7-icons ios-only">menu</i>
+                  <i class="icon material-icons md-only">menu</i>
+                </a>
+              </div>
+              <div class="title-large"><div class="title-large-text">Anura</div></div>
+            </div>
+          </div>
+          
 
-			<div class="list-block accordion-list" style="margin:0;">
-				<ul>
-					<li class="accordion-item"><a href="#" class="item-content item-link">
-						<div class="item-media">
-							<div class="chip bg-black">
-								<div class="chip-label color-white">
-									<div class="chip bg-black">
-										<div class="chip-label color-white">UICN</div>
-									</div>
-								</div>
-							</div>
-						</div>	
-						<div class="item-inner">
-							<div class="item-title">Estado de Conservación UICN</div>
-						</div></a>
-						<div class="accordion-item-content">
-							<div class="content-block">
-								<h3>Estado de Conservación según la Unión Internacional para la Conservación de la Naturaleza</h3>
-								<p class="justificado">Medida de la probabilidad de que una especie continúe existiendo en el presente o en el futuro cercano, en vista no sólo del volumen de la población actual, sino también de las tendencias que han mostrado a lo largo del tiempo, de la existencia de depredadores u otras amenazas, de las modificaciones previstas en su hábitat, etc.</p>
-								<p>
-									<div class="chip bg-blue"><div class="chip-label color-white">LC</div></div> Preocupación Menor<br>
-									<div class="chip bg-green"><div class="chip-label color-white">NT</div></div> Casi Amenazada<br>
-									<div class="chip bg-yellow"><div class="chip-label color-black">VU</div></div> Vulnerable<br>
-									<div class="chip bg-orange"><div class="chip-label color-white">EN</div></div> En Peligro<br>
-									<div class="chip bg-red"><div class="chip-label color-white">CR</div></div> En Peligro Crítico<br>
-									<div class="chip bg-black"><div class="chip-label color-white">EW</div></div> Extinta en estado silvestre<br>
-									<div class="chip bg-black"><div class="chip-label color-red">EX</div></div> Extinto
-								</p>
-								<p><a href="https://es.wikipedia.org/wiki/Estado_de_conservaci%C3%B3n" target="_blank" class="external">+ info</a></p>
-							</div>
-						</div>
-					</li>
-					<li class="accordion-item"><a href="#" class="item-content item-link">
-						<div class="item-media">
-							<div class="chip bg-black">
-								<div class="chip-label color-white">
-									<div class="chip bg-black">
-										<div class="chip-label color-white">ARG</div>
-									</div>
-								</div>
-							</div>
-						</div>	
-						<div class="item-inner">
-							<div class="item-title">Estado de Conservación en Argentina</div>
-						</div></a>
-						<div class="accordion-item-content">
-							<div class="content-block">
-								<h3>Estado de Conservación en Argentina</h3>
-								<p class="justificado">Basado en la última Categorización del Estado de Conservación de los Anfibios de la República Argentina (Vaira <i>et al.</i> 2012, Giraudo <i>et al.</i> 2012).</p>
-								<p>
-									<div class="chip bg-lightgray"><div class="chip-label">NE</div></div> No Evaluada<br>
-									<div class="chip bg-gray"><div class="chip-label color-white">IC</div></div> Insuficientemente Conocida<br>
-									<div class="chip bg-green"><div class="chip-label color-white">NA</div></div> No Amenazada<br>
-									<div class="chip bg-yellow"><div class="chip-label">VU</div></div> Vulnerable<br>
-									<div class="chip bg-orange"><div class="chip-label color-white">AM</div></div> Amenazada<br>
-									<div class="chip bg-red"><div class="chip-label color-white">EP</div></div> En Peligro
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="accordion-item"><a href="#" class="item-content item-link">
-						<div class="item-media">
-							<div class="chip bg-black">
-								<div class="chip-label color-white">
-									<div class="chip bg-black">
-										<div class="chip-label color-white"><i class="f7-icons color-white chippeque">graph_round</i></div>
-									</div>
-								</div>
-							</div>
-						</div>	
-						<div class="item-inner">
-							<div class="item-title">Abundancia</div>
-						</div></a>
-						<div class="accordion-item-content">
-							<div class="content-block">
-								<h3>Abundancia</h3>
-								<p class="justificado">Basado en la última Categorización del Estado de Conservación de los Anfibios de la República Argentina (Vaira <i>et al.</i> 2012, Giraudo <i>et al.</i> 2012).</p>
-								<p>
-								<div class="chip bg-green"><div class="chip-label color-white">I</div></div> Abundante y registrada frecuentemente en la última década<br>
-								<div class="chip bg-lime"><div class="chip-label color-white">II</div></div> Común y registrada frecuentemente en la última década (si fue buscada adecuadamente)<br>
-								<div class="chip bg-yellow"><div class="chip-label color-black">III</div></div> Escasa, pero registrada en la última década (si fue buscada adecuadamente)<br>
-								<div class="chip bg-amber"><div class="chip-label color-white">IV</div></div> Muy escasa o no registrada en los últimos 10 años a pesar de ser buscada adecuadamente<br>
-								<div class="chip bg-orange"><div class="chip-label color-white">V</div></div> Sin registro en los últimos 10 a 25 años a pesar de ser buscada adecuadamente<br>
-								<div class="chip bg-red"><div class="chip-label color-white">VI</div></div> Sin registro en los últimos 50 años a pesar de ser buscada adecuadamente
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="accordion-item"><a href="#" class="item-content item-link">
-						<div class="item-media">
-							<div class="chip bg-black">
-								<div class="chip-label color-white">
-									<div class="chip bg-black">
-										<div class="chip-label color-white"><i class="f7-icons color-white chippeque">eye</i></div>
-									</div>
-								</div>
-							</div>
-						</div>	
-						<div class="item-inner">
-							<div class="item-title">Detectabilidad Visual</div>
-						</div></a>
-						<div class="accordion-item-content">
-							<div class="content-block">
-								<h3>Detectabilidad Visual</h3>
-								<p class="justificado">Basado en la última Categorización del Estado de Conservación de los Anfibios de la República Argentina (Vaira <i>et al.</i> 2012, Giraudo <i>et al.</i> 2012).</p>
-								<p>
-								<div class="chip bg-green"><div class="chip-label"><i class="f7-icons color-white chippeque">eye</i></div></div> Fácil<br>
-								<div class="chip bg-yellow"><div class="chip-label"><i class="f7-icons color-black chippeque">eye</i></div></div> Mediana<br>
-								<div class="chip bg-red"><div class="chip-label"><i class="f7-icons color-white chippeque">eye</i></div></div> Difícil
-								</p>
-							</div>
-						</div>
-					</li>
-					<li class="accordion-item"><a href="#" class="item-content item-link">
-						<div class="item-media">
-							<div class="chip bg-black">
-								<div class="chip-label color-white">
-									<div class="chip bg-black">
-										<div class="chip-label color-white"><i class="f7-icons color-white chippeque">radio</i></div>
-									</div>
-								</div>
-							</div>
-						</div>	
-						<div class="item-inner">
-							<div class="item-title">Detectabilidad Auditiva</div>
-						</div></a>
-						<div class="accordion-item-content">
-							<div class="content-block">
-								<h3>Detectabilidad Auditiva</h3>
-								<p class="justificado">Basado en la última Categorización del Estado de Conservación de los Anfibios de la República Argentina (Vaira <i>et al.</i> 2012, Giraudo <i>et al.</i> 2012).</p>
-								<p>
-									<div class="chip bg-green"><div class="chip-label"><i class="f7-icons color-white chippeque">radio</i></div></div> Fácil<br>
-									<div class="chip bg-yellow"><div class="chip-label"><i class="f7-icons color-black chippeque">radio</i></div></div> Mediana<br>
-									<div class="chip bg-red"><div class="chip-label"><i class="f7-icons color-white chippeque">radio</i></div></div> Difícil
-								</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
+          <!-- Scrollable page content-->
+          <div class="page-content">
+            <div class="block block-strong">
+              <p class="text-align-justify">Los <b>anuros</b> son un grupo de animales comúnmente conocidos como <b>sapos y ranas</b>. Se caracterizan por presentar un cuerpo corto y ensanchando, cuatro patas y carecen de cola. Suelen estar asociados al agua, sin embargo hay especies que se han independizado totalmente de ella. Podemos observarlos frecuentemente de noche, momento en el que la mayoría de las especies están activas. Los machos tienen la capacidad de emitir cantos para atraer a las hembras a los sitios en donde se reproducen. En general, el ciclo de vida de los anuros incluye una fase en la tierra, donde viven los juveniles y adultos, y una fase en el agua, donde se desarrollan los huevos y los renacuajos. Sin embargo, existen muchas variantes a este esquema general de ciclo de vida.</p>
+              <p class="text-align-justify">Queda claro hasta ahora, que los anuros son un grupo de organismos muy diverso, no sólo en número, con cerca de 7000 especies descriptas en todo el mundo, sino también en hábitos, modos reproductivos y comportamiento.</p>
+              <p class="text-align-justify">Este catálogo los invita a introducirse en el fascinante mundo de este grupo de animales y conocer cada una las especies que podemos encontrar en la provincia de Jujuy, sean bienvenidos.</p>
+              
+            </div>
 
-		</div>
-	<!-- FIN POPUP REFERENCIAS -->
+            <div class="block-title">Navigation</div>
+            <div class="list">
+              <ul>
+                <li>
+                  <a href="/about/" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title">About</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-	<!-- POPUP ACERCA DE -->
-	<div class="popup popup-acercade">
-		<div class="navbar bg-green">
-			<a href="#" class="close-popup">
-			<div class="navbar-inner">
-				<div class="center color-white">Acerca de</div>
-				<div class="right" style="margin-right: 20px;"><i class="f7-icons color-white">close</i></div>
-			</div>
-			</a>
-		</div>
+          </div>
+        </div>
 
-		<div class="content-block inset">
-		<div class="content-block-inner" style="padding: 0px 16px">
-			<p class="justificado">Esta app tiene como objetivo proporcionar información acerca de la diversidad de anuros que presenta la provincia de Jujuy. Contiene fichas descriptivas con datos precisos que permiten identificar las diferentes especies. Además, en cada ficha se puede encontrar información acerca del estado de conservación, distribución y como se reproduce cada especie.</p>
-			<p class="justificado">De las 45 especies de anuros registradas en Jujuy, en esta guía se excluyó la descripción de sólo 3 especies: <i>Rhinella gnustae</i>, <i>Telmatobius marmoratus</i> y <i>Elachistocleis bicolor</i>; debido a que su presencia en la provincia es dudosa según los especialistas.</p>
-		</div>
-		</div>
 
-		<div class="content-block-title">¿Quiénes somos?</div>
-		<div class="content-block inset">
-		<div class="content-block-inner" style="padding: 0px 16px">
-			<p class="justificado">Este proyecto fue desarrollado por integrantes del Instituto de Ecoregiones Andinas, INECOA, dependiente de la Universidad Nacional de Jujuy y el CONICET. Formamos parte del laboratorio del Dr. Marcos Vaira, especialista en anuros del NOA. El grupo de trabajo tiene una trayectoria de más de 20 años estudiando y monitoreando la diversidad de anuros en la provincia, información que fue usada para realizar este catálogo. La programación y diseño de la app estuvo a cargo de Matías Jerez Leavy.</p>
-		</div>
-		</div>
+        
+      </div>
 
-		<div class="content-block-title">Créditos</div>
-		<div class="content-block inset">
-		<div class="content-block-inner" style="padding: 0px 16px">
-			<p><u>Desarrollo e idea original</u><br>
-				Matías Jerez Leavy, María José Salica.<br><br>
-				<u>Revisores:</u><br>
-				María José Salica, Laura Pereyra, Mauricio Akmentins, Marcos Vaira.<br><br>
-				<u>Colaboradores:</u><br>Carlos Cabrera, Adriana Castillo, Cecilia García, Soledad Gastón, Noelia González Baffa Trasci, Andrea Guanuco, Luciana Hernández Caffot, Grisel Navarro Acosta, Fernanda Quiroga, José Urquizo.
-			</p>
-		</div>
-		</div>
+      <div id="view-especies" class="view tab">
+      </div>
 
-		<div class="content-block-title">¿Dudas? ¿Sugerencias? ¡Escribinos!</div>
-		<div class="content-block inset">
-		<div class="content-block-inner" style="padding: 0px 16px">
-			<p class="justificado">Nos encantaría que nos escribas todas tus dudas y sugerencias sobre el proyecto a nuestra <a href="mailto:contacto@anura.tk?Subject=Anura%20App" target="_top" class="external"><b>dirección de email :)</b></a></p>
-		</div>
-		</div>
-	</div>
-	<!-- FIN POPUP ACERCA DE -->
-  
-	<!-- INICIO -->
-	<div class="views">
-		<div class="view navbar-fixed view-main">
-			<div class="pages">
-				<div data-page="index" class="page color-white">
-					<div class="page-content bg-splash">
-						<div class="login-screen-title animated flipInX" style="font-family:'Fjalla One',sans-serif;font-size:7em;font-weight:100;text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);">Anura</div>
-							<p class="centro animated bounceIn" style="-webkit-animation-delay:1s;animation-delay:1s;font-family:'Raleway',sans-serif;">Primer catálogo digital de anuros</p>
-							<p class="centro animated bounceIn" style="-webkit-animation-delay:1.5s;animation-delay:1.5s;">de la Provincia de Jujuy</p>
-						<div style="position:absolute;bottom:0px;text-align:center;width:100%;-webkit-animation-delay:.6s;animation-delay:.6s" class="animated fadeInUp">
-							<a href="lista.html" data-context-name="lista" class="button button-big button-fill button-raised bg-orange animation2 tada boton-inicio" style="height:100px;width:100px;line-height:100px;border-radius:50%;"><i class="f7-icons color-white" style="font-size:50px;">search_strong</i></a>
-							<br>
-							<p class="animated fadeIn" style="font-size:10px;-webkit-animation-delay:2s;animation-delay:2s;">© 2018 - alpha v1.0</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- FIN INICIO -->
-	
-	<script type="text/javascript" src="js/framework7.min.js"></script>
-	<script type="text/javascript" src="js/anura.js"></script>
+    </div>
+  </div>
 
-  </body>
+    
+
+  <!-- Framework7 library -->
+  <script src="js/framework7.bundle.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+</body>
 </html>

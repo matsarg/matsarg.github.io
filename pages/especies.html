@@ -1,0 +1,182 @@
+<template>
+  <div class="page" data-name="especies">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="title">Especies</div>
+        <div class="right">
+          <a class="link icon-only searchbar-enable" data-searchbar=".searchbar">
+            <i class="icon f7-icons if-not-md">search</i>
+            <i class="icon material-icons md-only">search</i>
+          </a>
+        </div>
+        <!-- Searchbar is a direct child of "navbar-inner" -->
+        <form class="searchbar searchbar-expandable searchbar-init" data-search-container=".search-list" data-search-in=".criterios"> <!-- Cambiar por .card-content para buscar dentro de toda la ficha -->
+          <div class="searchbar-inner">
+            <div class="searchbar-input-wrap">
+              <input type="search" placeholder="Buscar">
+              <i class="searchbar-icon"></i>
+              <span class="input-clear-button"></span>
+            </div>
+            <span class="searchbar-disable-button">Cancelar</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="page-content">
+
+      <div class="searchbar-backdrop"></div>
+      
+      <div class="list simple-list searchbar-not-found">
+        <ul>
+          <li>¡Sin resultados! Intenta con una búsqueda diferente.</li>
+        </ul>
+      </div>
+
+      <div class="list search-list searchbar-found">
+        <ul>
+        <div class="demo-expandable-cards">  
+        {{#each fichas}}
+        <li class="card card-expandable" data-backdrop="false">
+          <div class="criterios" style="display: none;">{{ncientifico}} {{nvulgar}} {{familia}}</div> <!-- CRITERIOS DE BUSQUEDA -->
+          <div class="card-content">
+            <div data-pagination='{"el": ".swiper-pagination"}' class="swiper-container swiper-init">
+              <div class="swiper-wrapper">
+                  {{#each imagenes}}
+                  <div class="swiper-slide">
+                    <img src="images/especies/{{imagenesclave}}.jpg" onerror="this.src='images/default.jpg';" style="width: 100%;">
+                    <div class="card-opened-fade-in text-color-white" style="text-shadow: 1px 1px 1px rgb(0, 0, 0);position: absolute;margin-top:-30px;margin-left:10px;font-size:0.8em">© {{imagenescopyright}}</div>
+                    <p class="card-opened-fade-out text-color-white ncientificocard"><i>{{../ncientifico}}</i></p>
+                    
+                    <div class="card-opened-fade-out" style="position: absolute;margin-top: -60px;margin-left: 15px">
+                    <div class="chip">
+                        <div class="chip-media bg-color-{{../conservauicn}}" style="font-size: 0.7em"><b>UICN</b></div>
+                    </div>
+                    <div class="chip">
+                        <div class="chip-media bg-color-{{../conservaarg}}" style="font-size: 0.7em"><b>ARG</b></div>
+                    </div>
+                    <div class="chip">
+                        <div class="chip-media bg-color-{{../abundancia}}">
+                            <i class="icon f7-icons if-not-md">graph_round</i>
+                            <i class="icon material-icons md-only">show_chart</i>
+                        </div>
+                    </div>
+                    <div class="chip">
+                        <div class="chip-media bg-color-{{../dvisual}}">
+                            <i class="icon f7-icons if-not-md">eye</i>
+                            <i class="icon material-icons md-only">visibility</i>
+                        </div>
+                    </div>
+                    <div class="chip">
+                        <div class="chip-media bg-color-{{../dauditiva}}">
+                            <i class="icon f7-icons if-not-md">radio</i>
+                            <i class="icon material-icons md-only">hearing</i>
+                        </div>
+                    </div>
+                  </div>
+
+                  </div>{{/each}}
+                </div>
+                <div class="swiper-pagination card-opened-fade-in"></div>
+            </div>
+            
+              <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                <i class="icon f7-icons">close_round_fill</i>
+              </a>
+            
+
+            <div class="card-content-padding">
+              <div class="block-title-large text-color-green"><b><i>{{ncientifico}}</i></b></div>
+              <div class="block-title-medium text-color-orange">{{nvulgar}}</div>
+                <p><b class="text-color-red">Familia</b> {{familia}}<br>
+                <b class="text-color-red">Tamaño</b> {{tamano}}<br>
+                <b class="text-color-red">Hábitat</b> {{habitat}}<br>
+                <b class="text-color-red">Hábito</b> {{habito}}</p>
+
+                <!--<a href="#" class="open-toast-large" onclick="notificationClickToClose.open();">
+                  <div class="chip">
+                    <div class="chip-media bg-color-{{conservauicn}}" style="font-size: 0.7em"><b>UICN</b></div>
+                    <div class="chip-label">UICN</div>
+                  </div>
+                </a>-->
+
+                <a class="sheet-open" href="#" data-sheet=".sheet-UICN-{{conservauicn}}">
+                  <div class="chip">
+                    <div class="chip-media bg-color-{{conservauicn}}" style="font-size: 0.7em"><b>UICN</b></div>
+                  </div>
+                </a>
+                
+
+                  <div class="chip">
+                    <div class="chip-media bg-color-{{conservaarg}}" style="font-size: 0.7em"><b>ARG</b></div>
+                  </div>
+                  <div class="chip">
+                    <div class="chip-media bg-color-{{abundancia}}">
+                      <i class="icon f7-icons if-not-md">graph_round</i>
+                      <i class="icon material-icons md-only">show_chart</i>
+                    </div>
+                  </div>
+                  <div class="chip">
+                    <div class="chip-media bg-color-{{dvisual}}">
+                      <i class="icon f7-icons if-not-md">eye</i>
+                      <i class="icon material-icons md-only">visibility</i>
+                    </div>
+                  </div>
+                  <div class="chip">
+                    <div class="chip-media bg-color-{{dauditiva}}">
+                      <i class="icon f7-icons if-not-md">radio</i>
+                      <i class="icon material-icons md-only">hearing</i>
+                    </div>
+                  </div>
+                
+                  
+
+                <p class='text-align-justify'><b class="text-color-red">Características</b><br>
+                {{caracteristicas}}</p>
+                <p class='text-align-justify'><b class="text-color-red">¿Dónde se los encuentra?</b><br>
+                {{microhabitats}}</p>
+                <p class='text-align-justify'><b class="text-color-red">Rango Altitudinal</b><br>
+                {{rangoaltitud}}</p>
+                <p class='text-align-justify'><b class="text-color-red">Ecoregión</b><br>
+                {{ecoregion}}</p>
+                <p class='text-align-justify'><b class="text-color-red">Distribución General</b><br>
+                {{distrigeneral}}</p>
+                <p class='text-align-justify'><b class="text-color-red">Distribución en Argentina</b><br>
+                {{distriargentina}}</p>
+                <p class='text-align-justify'><b class="text-color-red">¿Cómo se reproducen?</b><br>
+                {{modoreproductivo}}</p>
+                <p><a href="#" class="button button-fill button-round button-large card-close">Cerrar</a></p>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+        </div>
+        </ul>
+      </div>
+      
+
+      <div class="sheet-modal sheet-UICN-blue" style="height: 100px">
+        <div class="toolbar bg-color-blue">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación UICN</div>
+            <div class="right"><a class="link sheet-close text-color-white" href="#">Cerrar</a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Preocupación Menor</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</template>
+<script>
+  return {
+    data: function () {
+      return {
+        fichas: this.$root.fichas,
+      };
+    }
+  };
+</script>
