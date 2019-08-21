@@ -60,3 +60,19 @@
 .chip {
   padding-right: 0;
 }
+.fecha {
+  border: 1px solid var(--f7-button-border-color,var(--f7-theme-color));
+  vertical-align: middle;
+  text-overflow: unset;
+  font-size: 2vw;
+  text-transform: unset;
+  font-weight: bold;
+}
+.swiper-pagination-bullet {
+  opacity: .5;
+  background: white;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: orange;
+}

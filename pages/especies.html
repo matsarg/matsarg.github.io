@@ -1,6 +1,6 @@
 <template>
   <div class="page" data-name="especies">
-    <div class="navbar">
+    <div class="navbar searchbar-enable">
       <div class="navbar-inner sliding">
         <div class="title">Especies</div>
         <div class="right">
@@ -36,10 +36,10 @@
         <ul>
         <div class="demo-expandable-cards">  
         {{#each fichas}}
-        <li class="card card-expandable" data-backdrop="false">
+        <li class="card card-expandable card-{{id}}" data-backdrop="false">
           <div class="criterios" style="display: none;">{{ncientifico}} {{nvulgar}} {{familia}}</div> <!-- CRITERIOS DE BUSQUEDA -->
           <div class="card-content">
-            <div data-pagination='{"el": ".swiper-pagination"}' class="swiper-container swiper-init">
+            <div data-pagination='{"el": ".swiper-pagination"}' data-loop="true" class="swiper-container swiper-init">
               <div class="swiper-wrapper">
                   {{#each imagenes}}
                   <div class="swiper-slide">
@@ -87,10 +87,40 @@
             <div class="card-content-padding">
               <div class="block-title-large text-color-green"><b><i>{{ncientifico}}</i></b></div>
               <div class="block-title-medium text-color-orange">{{nvulgar}}</div>
-                <p><b class="text-color-red">Familia</b> {{familia}}<br>
-                <b class="text-color-red">Tamaño</b> {{tamano}}<br>
-                <b class="text-color-red">Hábitat</b> {{habitat}}<br>
-                <b class="text-color-red">Hábito</b> {{habito}}</p>
+                
+              <p>
+                <a class="sheet-open" style="color: inherit;" href="#" data-sheet=".sheet-familia">
+                  <b class="text-color-red">Familia</b> <i>{{familia}}</i>
+                </a><br>
+                <a class="sheet-open" style="color: inherit;" href="#" data-sheet=".sheet-tamano">
+                  <b class="text-color-red">Tamaño</b> {{tamano}}
+                </a><br>
+                <a class="sheet-open" style="color: inherit;" href="#" data-sheet=".sheet-habitat">
+                  <b class="text-color-red">Hábitat</b> {{habitat}}
+                </a><br>
+                <a class="sheet-open" style="color: inherit;" href="#" data-sheet=".sheet-habito">
+                  <b class="text-color-red">Hábito</b> {{habito}}
+                </a>
+              </p>
+
+              <a class="sheet-open" style="color: inherit;" href="#" data-sheet=".sheet-periododeactividad">
+                <p class="text-color-orange" style="margin: -10px 0 -18px 0"><b>Período de Actividad</b></p>
+                <p class="segmented disabled">
+                  <button class="fecha button button-outline button-{{jul}}" style="border-radius: 5px 0 0 5px;">Jul</button>
+                  <button class="fecha button button-outline button-{{ago}}">Ago</button>
+                  <button class="fecha button button-outline button-{{sep}}">Sep</button>
+                  <button class="fecha button button-outline button-{{oct}}">Oct</button>
+                  <button class="fecha button button-outline button-{{nov}}">Nov</button>
+                  <button class="fecha button button-outline button-{{dic}}">Dic</button>
+                  <button class="fecha button button-outline button-{{ene}}">Ene</button>
+                  <button class="fecha button button-outline button-{{feb}}">Feb</button>
+                  <button class="fecha button button-outline button-{{mar}}">Mar</button>
+                  <button class="fecha button button-outline button-{{abr}}">Abr</button>
+                  <button class="fecha button button-outline button-{{may}}">May</button>
+                  <button class="fecha button button-outline button-{{jun}}" style="border-radius: 0 5px 5px 0;">Jun</button>
+                </p>
+              </a>
+                
 
                 <!--<a href="#" class="open-toast-large" onclick="notificationClickToClose.open();">
                   <div class="chip">
@@ -99,35 +129,51 @@
                   </div>
                 </a>-->
 
+                <p>
                 <a class="sheet-open" href="#" data-sheet=".sheet-UICN-{{conservauicn}}">
                   <div class="chip">
                     <div class="chip-media bg-color-{{conservauicn}}" style="font-size: 0.7em"><b>UICN</b></div>
                   </div>
                 </a>
-                
 
+                <a class="sheet-open" href="#" data-sheet=".sheet-ARG-{{conservaarg}}">
                   <div class="chip">
                     <div class="chip-media bg-color-{{conservaarg}}" style="font-size: 0.7em"><b>ARG</b></div>
                   </div>
+                </a>
+                
+                <a class="sheet-open" href="#" data-sheet=".sheet-abundancia-{{abundancia}}">
                   <div class="chip">
                     <div class="chip-media bg-color-{{abundancia}}">
                       <i class="icon f7-icons if-not-md">graph_round</i>
                       <i class="icon material-icons md-only">show_chart</i>
                     </div>
                   </div>
+                </a>
+
+                <a class="sheet-open" href="#" data-sheet=".sheet-dvisual-{{dvisual}}">
                   <div class="chip">
                     <div class="chip-media bg-color-{{dvisual}}">
                       <i class="icon f7-icons if-not-md">eye</i>
                       <i class="icon material-icons md-only">visibility</i>
                     </div>
                   </div>
+                </a>
+
+                <a class="sheet-open" href="#" data-sheet=".sheet-dsonora-{{dsonora}}">
                   <div class="chip">
                     <div class="chip-media bg-color-{{dauditiva}}">
                       <i class="icon f7-icons if-not-md">radio</i>
                       <i class="icon material-icons md-only">hearing</i>
                     </div>
                   </div>
+                </a>
+
+              </p>
                 
+
+              
+
                   
 
                 <p class='text-align-justify'><b class="text-color-red">Características</b><br>
@@ -144,6 +190,25 @@
                 {{distriargentina}}</p>
                 <p class='text-align-justify'><b class="text-color-red">¿Cómo se reproducen?</b><br>
                 {{modoreproductivo}}</p>
+
+                <div class="list-block media-list media-list-mini">
+                  <ul id="lista-especies" style="padding-left: inherit">{{#each similares}}
+                    <li>
+                    <a href="#" class="card-open" data-card=".card-{{similarid}}">
+                      <div class="item-content">
+                        <div class="item-media"><img src="images/especies/{{similarclave}}.jpg" onerror="this.src='images/default.jpg';" width="40px"></div>
+                        <div class="item-inner">
+                          <div class="item-title-row"  style="background-image: url()">
+                            <div class="item-title color-green"><i>{{similarncientifico}}</i></div>
+                          </div>
+                          <div class="item-subtitle color-black">{{similarnvulgar}}</div>
+                        </div>
+                      </div>
+                    </a>
+                    </li>{{/each}}
+                  </ul>
+                </div>
+
                 <p><a href="#" class="button button-fill button-round button-large card-close">Cerrar</a></p>
             </div>
           </div>
@@ -154,16 +219,182 @@
       </div>
       
 
-      <div class="sheet-modal sheet-UICN-blue" style="height: 100px">
+      <!-- FAMILIA -->
+      <div class="sheet-modal sheet-familia" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Familia</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Familia a la que pertenece cada especie, información obtenida de Frost (2018).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAMAÑO -->
+      <div class="sheet-modal sheet-tamano" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Tamaño</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Categorías referidas al tamaño promedio que presentan los adultos de cada especie. También se incluye el rango de tamaño basado en bibliografía y datos personales de los autores entre paréntesis.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HABITAT -->
+      <div class="sheet-modal sheet-habitat" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Hábitat</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Se refiere a los lugares en donde pasan la mayor parte del tiempo los adultos de cada especie. Pueden encontrarse en la <b>tierra (terrestres)</b>, en la <b>vegetación (arborícolas)</b>, en el <b>agua (acuáticos)</b> y/o en <b>cuevas (cavícolas)</b>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HABITO -->
+      <div class="sheet-modal sheet-habito" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Hábito</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Se refiere al momento del día en el que se encuentran activos los adultos de cada especie. Pueden ser <b>diurnos</b>, <b>nocturnos</b> y/o <b>crepuscular</b> (intervalo ante de la puesta del sol).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PERIODO DE ACTIVIDAD -->
+      <div class="sheet-modal sheet-periododeactividad" style="height: auto">
+        <div class="toolbar bg-color-orange">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Período de Actividad</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Los casilleros coloreados corresponden a los meses del año en el que se pueden escuchar los cantos y observar a los adultos de cada especie.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UICN Preocupación Menor -->
+      <div class="sheet-modal sheet-UICN-blue" style="height: auto">
         <div class="toolbar bg-color-blue">
           <div class="toolbar-inner" style="padding: 18px;">
             <div class="left text-color-white">Estado de Conservación UICN</div>
-            <div class="right"><a class="link sheet-close text-color-white" href="#">Cerrar</a></div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
           </div>
         </div>
         <div class="sheet-modal-inner">
           <div class="block" style="margin:10px 0;">
             <p>Preocupación Menor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UICN Casi Amenazada -->
+      <div class="sheet-modal sheet-UICN-green" style="height: auto">
+        <div class="toolbar bg-color-green">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación UICN</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Casi Amenazada</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UICN Vulnerable -->
+      <div class="sheet-modal sheet-UICN-yellow" style="height: auto">
+        <div class="toolbar bg-color-yellow">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left">Estado de Conservación UICN</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-black">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Vulnerable</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UICN En Peligro -->
+      <div class="sheet-modal sheet-UICN-orange" style="height: auto">
+        <div class="toolbar bg-color-orange">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación UICN</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>En Peligro</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UICN En Peligro Crítico -->
+      <div class="sheet-modal sheet-UICN-red" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación UICN</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>En Peligro Crítico</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UICN Extinta en estado silvestre -->
+      <div class="sheet-modal sheet-UICN-black" style="height: auto">
+        <div class="toolbar bg-color-black">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación UICN</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Extinta en estado silvestre</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UICN Extinto -->
+      <div class="sheet-modal sheet-UICN-blackred" style="height: auto">
+        <div class="toolbar bg-color-black">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación UICN</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Extinto</p>
           </div>
         </div>
       </div>

@@ -28,22 +28,6 @@
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
 
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-cover theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Right panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Views/Tabs container -->
     <div class="views tabs safe-areas">
       <!-- Tabbar for switching views-tabs -->
@@ -71,35 +55,71 @@
           <div class="navbar">
             <div class="navbar-inner">
               <div class="title sliding">Anura</div>
-              <div class="right">
-                <a href="#" class="link icon-only panel-open" data-panel="right">
-                  <i class="icon f7-icons ios-only">menu</i>
-                  <i class="icon material-icons md-only">menu</i>
-                </a>
-              </div>
-              <div class="title-large"><div class="title-large-text">Anura</div></div>
+              <div class="title-large"><div class="title-large-text" style="font-size: 2em;">Anura</div></div>
             </div>
           </div>
+
+          <!--
+          <div class="fab fab-right-bottom color-orange">
+            <a href="#">
+              <i class="icon f7-icons if-not-md">add</i>
+              <i class="icon f7-icons if-not-md">close</i>
+              <i class="icon material-icons md-only">add</i>
+              <i class="icon material-icons md-only">close</i>
+            </a>
+            <div class="fab-buttons fab-buttons-top">
+              <a href="#" class="fab-label-button">
+                <span>
+                  <i class="icon f7-icons ios-only">list</i>
+                  <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+                  <i class="icon material-icons md-only">view_list</i>
+                </span>
+                <span class="fab-label">Especies</span>
+              </a>
+              <a href="">2</a>
+              <a href="">3</a>
+            </div>
+          </div>-->
+          
           
 
           <!-- Scrollable page content-->
           <div class="page-content">
-            <div class="block block-strong">
-              <p class="text-align-justify">Los <b>anuros</b> son un grupo de animales comúnmente conocidos como <b>sapos y ranas</b>. Se caracterizan por presentar un cuerpo corto y ensanchando, cuatro patas y carecen de cola. Suelen estar asociados al agua, sin embargo hay especies que se han independizado totalmente de ella. Podemos observarlos frecuentemente de noche, momento en el que la mayoría de las especies están activas. Los machos tienen la capacidad de emitir cantos para atraer a las hembras a los sitios en donde se reproducen. En general, el ciclo de vida de los anuros incluye una fase en la tierra, donde viven los juveniles y adultos, y una fase en el agua, donde se desarrollan los huevos y los renacuajos. Sin embargo, existen muchas variantes a este esquema general de ciclo de vida.</p>
-              <p class="text-align-justify">Queda claro hasta ahora, que los anuros son un grupo de organismos muy diverso, no sólo en número, con cerca de 7000 especies descriptas en todo el mundo, sino también en hábitos, modos reproductivos y comportamiento.</p>
-              <p class="text-align-justify">Este catálogo los invita a introducirse en el fascinante mundo de este grupo de animales y conocer cada una las especies que podemos encontrar en la provincia de Jujuy, sean bienvenidos.</p>
-              
+
+            <div class="block text-align-center text-color-orange">
+              <h4>Primer catálogo digital de anuros<br>de la provincia de Jujuy</h4>
+            </div>
+            
+            <a href="#" onclick="wavesurfer.play();"><div id="waveform"></div></a>
+
+            <div class="block text-align-justify">
+              <p>Esta app tiene como objetivo proporcionar información acerca de la diversidad de anuros que presenta la provincia de Jujuy. Contiene fichas descriptivas con datos precisos que permiten identificar las diferentes especies. Además, en cada ficha se puede encontrar información acerca del estado de conservación, distribución y como se reproduce cada especie.</p>
+              <p>De las 45 especies de anuros registradas en Jujuy, en esta guía se excluyó la descripción de sólo 3 especies: <i>Rhinella gnustae</i>, <i>Telmatobius marmoratus</i> y <i>Elachistocleis bicolor</i>; debido a que su presencia en la provincia es dudosa según los especialistas.</p>
             </div>
 
-            <div class="block-title">Navigation</div>
-            <div class="list">
+            <div class="list accordion-list">
               <ul>
-                <li>
-                  <a href="/about/" class="item-content item-link">
+                <li class="accordion-item"><a href="#" class="item-content item-link">
                     <div class="item-inner">
-                      <div class="item-title">About</div>
+                      <div class="item-title text-color-red"><b>¿Qué son los Anuros?</b></div>
+                    </div></a>
+                  <div class="accordion-item-content">
+                    <div class="block block-strong">
+                      <p class="text-align-justify">Los <b>anuros</b> son un grupo de animales comúnmente conocidos como <b>sapos y ranas</b>. Se caracterizan por presentar un cuerpo corto y ensanchando, cuatro patas y carecen de cola. Suelen estar asociados al agua, sin embargo hay especies que se han independizado totalmente de ella. Podemos observarlos frecuentemente de noche, momento en el que la mayoría de las especies están activas. Los machos tienen la capacidad de emitir cantos para atraer a las hembras a los sitios en donde se reproducen. En general, el ciclo de vida de los anuros incluye una fase en la tierra, donde viven los juveniles y adultos, y una fase en el agua, donde se desarrollan los huevos y los renacuajos. Sin embargo, existen muchas variantes a este esquema general de ciclo de vida.</p>
+                      <p class="text-align-justify">Queda claro hasta ahora, que los anuros son un grupo de organismos muy diverso, no sólo en número, con cerca de 7000 especies descriptas en todo el mundo, sino también en hábitos, modos reproductivos y comportamiento.</p>
+                      <p class="text-align-justify">Este catálogo los invita a introducirse en el fascinante mundo de este grupo de animales y conocer cada una las especies que podemos encontrar en la provincia de Jujuy, sean bienvenidos.</p>
                     </div>
-                  </a>
+                  </div>
+                </li>
+                <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title text-color-red"><b>¿Quiénes somos?</b></div>
+                    </div></a>
+                  <div class="accordion-item-content">
+                    <div class="block">
+                      <p class="text-align-justify">Este proyecto fue desarrollado por integrantes del Instituto de Ecoregiones Andinas, INECOA, dependiente de la Universidad Nacional de Jujuy y el CONICET. Formamos parte del laboratorio del Dr. Marcos Vaira, especialista en anuros del NOA. El grupo de trabajo tiene una trayectoria de más de 20 años estudiando y monitoreando la diversidad de anuros en la provincia, información que fue usada para realizar este catálogo. La programación y diseño de la app estuvo a cargo de Matías Jerez Leavy.</p>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -118,14 +138,10 @@
   </div>
 
     
-
-  <!-- Framework7 library -->
+  <script src="js/wavesurfer.min.js"></script>
   <script src="js/framework7.bundle.min.js"></script>
-
-  <!-- App routes -->
   <script src="js/routes.js"></script>
-
-  <!-- Your custom app scripts -->
   <script src="js/app.js"></script>
+  
 </body>
 </html>
