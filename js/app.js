@@ -68,14 +68,7 @@ var app  = new Framework7({
           distriargentina: 'Jujuy y Salta',
           distrijujuy: 'Xxxx',
           modoreproductivo: 'Depositan los huevos en el agua en grupos de no más de 15 huevos adheridos entre sí.',
-          similares: [
-            {
-              similarid: '0',
-              similarncientifico: 'Desconocido',
-              similarnvulgar: 'No se encuentran especies similares',
-              similarclave: '',
-            },
-          ],
+          similares: [],
           bibliografia: 'Xxx',
         },
         {
@@ -649,8 +642,7 @@ var app  = new Framework7({
           distriargentina: 'Chaco, Córdoba, Formosa, Entre Ríos, Jujuy, Mendoza, Salta, San Luis, Santa Fe, Santiago del Estero, Tucumán.',
           distrijujuy: 'Xxxx',
           modoreproductivo: 'Depositan sus huevos sueltos en el fondo del cuerpo de agua',
-          similares: [
-          ],
+          similares: [],
           bibliografia: 'Xxx',
         },
         {
@@ -3263,22 +3255,14 @@ var app  = new Framework7({
 });
 
 // Init/Create views
-var homeView = app.views.create('#view-home', {
+var mainView = app.views.create('.view-main', {
   url: '/'
 });
-var especiesView = app.views.create('#view-especies', {
-  url: '/especies/'
-});
 
-// Create notification with click to close
-var notificationClickToClose = app.notification.create({
-  icon: '<i class="icon demo-icon">7</i>',
-  title: 'Anura',
-  titleRightText: 'UICN',
-  subtitle: 'Estado de Conservación UICN',
-  text: 'Click me to close',
-  closeOnClick: true,
-})
+app.dialog.preloader('Cargando', 'orange');
+app.on('pageInit', function (page) {
+  app.dialog.close();
+});
 
 var wavesurfer = WaveSurfer.create({
   container: '#waveform',

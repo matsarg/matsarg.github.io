@@ -76,3 +76,6 @@
   opacity: 1;
   background: orange;
 }
+.media-list, li.media-item {
+  --f7-list-item-padding-vertical: inherit;
+}

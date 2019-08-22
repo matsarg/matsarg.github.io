@@ -2,7 +2,7 @@
   <div class="page" data-name="especies">
     <div class="navbar searchbar-enable">
       <div class="navbar-inner sliding">
-        <div class="title">Especies</div>
+        <div class="title">Anura</div>
         <div class="right">
           <a class="link icon-only searchbar-enable" data-searchbar=".searchbar">
             <i class="icon f7-icons if-not-md">search</i>
@@ -32,7 +32,7 @@
         </ul>
       </div>
 
-      <div class="list search-list searchbar-found">
+      <div class="list search-list searchbar-found no-hairlines">
         <ul>
         <div class="demo-expandable-cards">  
         {{#each fichas}}
@@ -122,13 +122,6 @@
               </a>
                 
 
-                <!--<a href="#" class="open-toast-large" onclick="notificationClickToClose.open();">
-                  <div class="chip">
-                    <div class="chip-media bg-color-{{conservauicn}}" style="font-size: 0.7em"><b>UICN</b></div>
-                    <div class="chip-label">UICN</div>
-                  </div>
-                </a>-->
-
                 <p>
                 <a class="sheet-open" href="#" data-sheet=".sheet-UICN-{{conservauicn}}">
                   <div class="chip">
@@ -191,17 +184,18 @@
                 <p class='text-align-justify'><b class="text-color-red">¿Cómo se reproducen?</b><br>
                 {{modoreproductivo}}</p>
 
-                <div class="list-block media-list media-list-mini">
+                <p class='text-align-justify'><b class="text-color-red">Especies similares</b></p>
+                <div class="list media-list media-list-mini no-hairlines-between">
                   <ul id="lista-especies" style="padding-left: inherit">{{#each similares}}
                     <li>
-                    <a href="#" class="card-open" data-card=".card-{{similarid}}">
+                    <a href="#" id="linkSimilares" style="color: inherit;" onclick="app.card.close();setTimeout(()=>{app.card.open('.card-{{similarid}}');},200);" >
                       <div class="item-content">
-                        <div class="item-media"><img src="images/especies/{{similarclave}}.jpg" onerror="this.src='images/default.jpg';" width="40px"></div>
+                        <div class="item-media"><img src="images/especies/{{similarclave}}.jpg" onerror="this.src='images/default.jpg';" width="60px" style="border-radius: 5px;"></div>
                         <div class="item-inner">
-                          <div class="item-title-row"  style="background-image: url()">
-                            <div class="item-title color-green"><i>{{similarncientifico}}</i></div>
+                          <div class="item-title-row" >
+                            <div class="item-title"><i>{{similarncientifico}}</i></div>
                           </div>
-                          <div class="item-subtitle color-black">{{similarnvulgar}}</div>
+                          <div class="item-subtitle">{{similarnvulgar}}</div>
                         </div>
                       </div>
                     </a>
