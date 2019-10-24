@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1000px" height="900px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1000 900"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#388036;stroke-width:3.50277;stroke-linecap:square;stroke-linejoin:bevel}
+    .fil0 {fill:none}
+    .fil1 {fill:#4DAF4A}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="1000" height="900"/>
+  <polygon class="fil1 str0" points="236,144 303,128 318,115 322,97 323,81 333,49 335,37 335,26 339,24 381,39 391,49 390,65 428,69 470,116 485,122 493,119 504,122 529,120 535,112 561,117 648,116 646,134 639,137 631,193 620,199 619,207 607,235 602,250 622,272 613,293 618,307 618,317 629,328 628,340 633,354 632,366 642,375 681,396 678,408 669,431 653,459 640,472 636,550 622,559 609,633 563,700 537,654 532,618 526,574 500,536 479,516 433,491 369,463 290,442 246,440 235,432 223,408 211,219 233,192 243,152 "/>
+ </g>
+</svg>

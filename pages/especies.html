@@ -103,6 +103,48 @@
                 </a>
               </p>
 
+              <div>
+                <a class="sheet-open" href="#" data-sheet=".sheet-UICN-{{conservauicn}}">
+                  <div class="chip chip-interno">
+                    <div class="chip-media bg-color-{{conservauicn}}" style="font-size: 0.9em"><b>UICN</b></div>
+                  </div>
+                </a>
+
+                <a class="sheet-open" href="#" data-sheet=".sheet-ARG-{{conservaarg}}">
+                  <div class="chip chip-interno">
+                    <div class="chip-media bg-color-{{conservaarg}}" style="font-size: 0.9em"><b>ARG</b></div>
+                  </div>
+                </a>
+                
+                <a class="sheet-open" href="#" data-sheet=".sheet-abundancia-{{abundancia}}">
+                  <div class="chip chip-interno">
+                    <div class="chip-media bg-color-{{abundancia}}">
+                      <i class="icon f7-icons if-not-md">graph_round</i>
+                      <i class="icon material-icons md-only">show_chart</i>
+                    </div>
+                  </div>
+                </a>
+
+                <a class="sheet-open" href="#" data-sheet=".sheet-dvisual-{{dvisual}}">
+                  <div class="chip chip-interno">
+                    <div class="chip-media bg-color-{{dvisual}}">
+                      <i class="icon f7-icons if-not-md">eye</i>
+                      <i class="icon material-icons md-only">visibility</i>
+                    </div>
+                  </div>
+                </a>
+
+                <a class="sheet-open" href="#" data-sheet=".sheet-dauditiva-{{dauditiva}}">
+                  <div class="chip chip-interno">
+                    <div class="chip-media bg-color-{{dauditiva}}">
+                      <i class="icon f7-icons if-not-md">radio</i>
+                      <i class="icon material-icons md-only">hearing</i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div style="margin-top: 1em">
               <a class="sheet-open" style="color: inherit;" href="#" data-sheet=".sheet-periododeactividad">
                 <p class="text-color-orange" style="margin: -10px 0 -18px 0"><b>Período de Actividad</b></p>
                 <p class="segmented disabled">
@@ -120,54 +162,8 @@
                   <button class="fecha button button-outline button-{{jun}}" style="border-radius: 0 5px 5px 0;">Jun</button>
                 </p>
               </a>
+            </div>
                 
-
-                <p>
-                <a class="sheet-open" href="#" data-sheet=".sheet-UICN-{{conservauicn}}">
-                  <div class="chip">
-                    <div class="chip-media bg-color-{{conservauicn}}" style="font-size: 0.7em"><b>UICN</b></div>
-                  </div>
-                </a>
-
-                <a class="sheet-open" href="#" data-sheet=".sheet-ARG-{{conservaarg}}">
-                  <div class="chip">
-                    <div class="chip-media bg-color-{{conservaarg}}" style="font-size: 0.7em"><b>ARG</b></div>
-                  </div>
-                </a>
-                
-                <a class="sheet-open" href="#" data-sheet=".sheet-abundancia-{{abundancia}}">
-                  <div class="chip">
-                    <div class="chip-media bg-color-{{abundancia}}">
-                      <i class="icon f7-icons if-not-md">graph_round</i>
-                      <i class="icon material-icons md-only">show_chart</i>
-                    </div>
-                  </div>
-                </a>
-
-                <a class="sheet-open" href="#" data-sheet=".sheet-dvisual-{{dvisual}}">
-                  <div class="chip">
-                    <div class="chip-media bg-color-{{dvisual}}">
-                      <i class="icon f7-icons if-not-md">eye</i>
-                      <i class="icon material-icons md-only">visibility</i>
-                    </div>
-                  </div>
-                </a>
-
-                <a class="sheet-open" href="#" data-sheet=".sheet-dsonora-{{dsonora}}">
-                  <div class="chip">
-                    <div class="chip-media bg-color-{{dauditiva}}">
-                      <i class="icon f7-icons if-not-md">radio</i>
-                      <i class="icon material-icons md-only">hearing</i>
-                    </div>
-                  </div>
-                </a>
-
-              </p>
-                
-
-              
-
-                  
 
                 <p class='text-align-justify'><b class="text-color-red">Características</b><br>
                 {{caracteristicas}}</p>
@@ -181,6 +177,15 @@
                 {{distrigeneral}}</p>
                 <p class='text-align-justify'><b class="text-color-red">Distribución en Argentina</b><br>
                 {{distriargentina}}</p>
+                <p class='text-align-justify'><b class="text-color-red">Distribución en Jujuy</b><br>
+                
+              
+                <div style="position:relative">
+                  <img src="images/jujuy.svg" style="width: 100%;">
+                  <img src="images/mapas/{{clave}}.svg" onerror="this.src='images/jujuy.svg';" style="opacity: 0.7;width: 100%;position:absolute; top:0; left:0;">
+                </div> 
+
+                </p>
                 <p class='text-align-justify'><b class="text-color-red">¿Cómo se reproducen?</b><br>
                 {{modoreproductivo}}</p>
 
@@ -392,7 +397,263 @@
           </div>
         </div>
       </div>
+
+      <!-- ARG No Evaluada -->
+      <div class="sheet-modal sheet-ARG-gray" style="height: auto">
+        <div class="toolbar bg-color-gray">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación en Argentina</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>No Evaluada</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARG No Amenazada -->
+      <div class="sheet-modal sheet-ARG-green" style="height: auto">
+        <div class="toolbar bg-color-green">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación en Argentina</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>No Amenazada</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARG Vulnerable -->
+      <div class="sheet-modal sheet-ARG-yellow" style="height: auto">
+        <div class="toolbar bg-color-yellow">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación en Argentina</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Vulnerable</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARG Amenazada -->
+      <div class="sheet-modal sheet-ARG-orange" style="height: auto">
+        <div class="toolbar bg-color-orange">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación en Argentina</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Amenazada</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARG En Peligro -->
+      <div class="sheet-modal sheet-ARG-red" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Estado de Conservación en Argentina</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>En Peligro</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABUDANCIA I -->
+      <div class="sheet-modal sheet-abundancia-green" style="height: auto">
+        <div class="toolbar bg-color-green">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Abundancia</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Abundante y registrada frecuentemente en la última década</p>
+          </div>
+        </div>
+      </div>
       
+      <!-- ABUDANCIA II -->
+      <div class="sheet-modal sheet-abundancia-lime" style="height: auto">
+        <div class="toolbar bg-color-lime">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Abundancia</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Común y registrada frecuentemente en la última década (si fue buscada adecuadamente)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABUDANCIA III -->
+      <div class="sheet-modal sheet-abundancia-yellow" style="height: auto">
+        <div class="toolbar bg-color-yellow">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Abundancia</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Escasa, pero registrada en la última década (si fue buscada adecuadamente)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABUDANCIA IV -->
+      <div class="sheet-modal sheet-abundancia-amber" style="height: auto">
+        <div class="toolbar bg-color-amber">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Abundancia</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Muy escasa o no registrada en los últimos 10 años a pesar de ser buscada adecuadamente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABUDANCIA V -->
+      <div class="sheet-modal sheet-abundancia-orange" style="height: auto">
+        <div class="toolbar bg-color-orange">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Abundancia</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Sin registro en los últimos 10 a 25 años a pesar de ser buscada adecuadamente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABUDANCIA VI -->
+      <div class="sheet-modal sheet-abundancia-red" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Abundancia</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Sin registro en los últimos 50 años a pesar de ser buscada adecuadamente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETECTABILIDAD VISUAL Fácil -->
+      <div class="sheet-modal sheet-dvisual-green" style="height: auto">
+        <div class="toolbar bg-color-green">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Detectabilidad Visual</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Fácil</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETECTABILIDAD VISUAL Mediana -->
+      <div class="sheet-modal sheet-dvisual-yellow" style="height: auto">
+        <div class="toolbar bg-color-yellow">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Detectabilidad Visual</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Mediana</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETECTABILIDAD VISUAL Difícil -->
+      <div class="sheet-modal sheet-dvisual-red" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Detectabilidad Visual</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Difícil</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETECTABILIDAD AUDITIVA Fácil -->
+      <div class="sheet-modal sheet-dauditiva-green" style="height: auto">
+        <div class="toolbar bg-color-green">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Detectabilidad Auditiva</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Fácil</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETECTABILIDAD AUDITIVA Mediana -->
+      <div class="sheet-modal sheet-dauditiva-yellow" style="height: auto">
+        <div class="toolbar bg-color-yellow">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Detectabilidad Auditiva</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Mediana</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETECTABILIDAD AUDITIVA Difícil -->
+      <div class="sheet-modal sheet-dauditiva-red" style="height: auto">
+        <div class="toolbar bg-color-red">
+          <div class="toolbar-inner" style="padding: 18px;">
+            <div class="left text-color-white">Detectabilidad Auditiva</div>
+            <div class="right"><a class="link sheet-close" href="#"><i class="icon f7-icons color-white">close</i></a></div>
+          </div>
+        </div>
+        <div class="sheet-modal-inner">
+          <div class="block" style="margin:10px 0;">
+            <p>Difícil</p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </template>
