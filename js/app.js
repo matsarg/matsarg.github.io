@@ -3264,11 +3264,3 @@ app.on('pageInit', function (page) {
   app.dialog.close();
 });
 
-var wavesurfer = WaveSurfer.create({
-  container: '#waveform',
-  waveColor: 'green',
-  progressColor: 'orange',
-  barWidth: 2,
-  barHeight: 2,
-});
-wavesurfer.load('audio/boana_riojana.mp3');
